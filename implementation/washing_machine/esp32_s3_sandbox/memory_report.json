@@ -1,0 +1,284 @@
+{
+  "hardware_profile": {
+    "name": "ESP32-S3-N16R8 (Default Project Profile)",
+    "cpu_freq_mhz": 240,
+    "sram_total_kb": 512.0,
+    "rom_kb": 384.0,
+    "rtc_fast_kb": 8.0,
+    "rtc_slow_kb": 8.0,
+    "icache_kb": 32.0,
+    "dcache_kb": 64.0,
+    "flash_mb": 16.0,
+    "psram_mb": 8.0,
+    "flash_mode": "Octal SPI (OPI) / QPI",
+    "psram_mode": "Octal SPI (OPI)"
+  },
+  "model_architecture": {
+    "checkpoint_step": 5750,
+    "config": {
+      "arm": "ple",
+      "vocab_size": 1024,
+      "out_vocab_size": 1024,
+      "d_model": 128,
+      "n_layers": 6,
+      "n_heads": 4,
+      "ffn_hidden": 256,
+      "seq_len": 128,
+      "ple_dim": 64,
+      "rope_theta": 10000.0
+    },
+    "param_budget": {
+      "core": 1132992,
+      "stream": 131072,
+      "table": 393216,
+      "total": 1657280
+    }
+  },
+  "precision_footprints_kb": {
+    "FP32": {
+      "total_kb": 6473.75,
+      "total_mb": 6.322021484375,
+      "core_kb": 4425.75,
+      "table_kb": 1536.0,
+      "stream_kb": 512.0
+    },
+    "FP16": {
+      "total_kb": 3236.875,
+      "total_mb": 3.1610107421875,
+      "core_kb": 2212.875,
+      "table_kb": 768.0,
+      "stream_kb": 256.0
+    },
+    "INT8": {
+      "total_kb": 1618.4375,
+      "total_mb": 1.58050537109375,
+      "core_kb": 1106.4375,
+      "table_kb": 384.0,
+      "stream_kb": 128.0
+    },
+    "INT4_group64": {
+      "total_kb": 859.794921875,
+      "total_mb": 0.8396434783935547,
+      "core_kb": 587.794921875,
+      "table_kb": 204.0,
+      "stream_kb": 68.0
+    }
+  },
+  "memory_hierarchy_allocation": {
+    "FLASH": {
+      "used_kb": 1158.8,
+      "available_kb": 16384.0,
+      "headroom_kb": 15225.2,
+      "headroom_mb": 14.87,
+      "pct_used": 7.07,
+      "fit": true
+    },
+    "PSRAM": {
+      "used_kb": 2002.4,
+      "available_kb": 8192.0,
+      "headroom_kb": 6189.6,
+      "headroom_mb": 6.04,
+      "pct_used": 24.44,
+      "staged_core_int8_kb": 1106.4,
+      "kv_cache_128_kb": 768.0,
+      "fit": true
+    },
+    "INTERNAL_SRAM_REALISTIC": {
+      "sram_reserve_kb": 128.0,
+      "hot_model_buffers_bytes": 24832,
+      "hot_model_buffers_kb": 24.25,
+      "stack_reserve_kb": 16.0,
+      "tok_runtime_kb": 4.0,
+      "json_gen_kb": 2.0,
+      "total_used_sram_kb": 174.25,
+      "total_available_sram_kb": 512.0,
+      "remaining_sram_kb": 337.75,
+      "pct_used": 34.03,
+      "fit": true
+    },
+    "INTERNAL_SRAM_THEORETICAL": {
+      "sram_reserve_kb": 0.0,
+      "hot_model_buffers_bytes": 24832,
+      "hot_model_buffers_kb": 24.25,
+      "stack_reserve_kb": 16.0,
+      "tok_runtime_kb": 4.0,
+      "json_gen_kb": 2.0,
+      "total_used_sram_kb": 46.25,
+      "total_available_sram_kb": 512.0,
+      "remaining_sram_kb": 465.75,
+      "pct_used": 9.03,
+      "fit": true
+    }
+  },
+  "context_length_sweep": [
+    {
+      "context_length": 32,
+      "kv_cache_bytes": 196608,
+      "kv_cache_kb": 192.0,
+      "sram_used_kb": 173.9,
+      "sram_remaining_kb": 338.1,
+      "psram_used_kb": 1426.4,
+      "psram_remaining_kb": 6765.6,
+      "total_runtime_ram_mb": 1.56,
+      "fit_sram": true,
+      "fit_psram": true,
+      "overall_fit": "FIT"
+    },
+    {
+      "context_length": 64,
+      "kv_cache_bytes": 393216,
+      "kv_cache_kb": 384.0,
+      "sram_used_kb": 174.0,
+      "sram_remaining_kb": 338.0,
+      "psram_used_kb": 1618.4,
+      "psram_remaining_kb": 6573.6,
+      "total_runtime_ram_mb": 1.75,
+      "fit_sram": true,
+      "fit_psram": true,
+      "overall_fit": "FIT"
+    },
+    {
+      "context_length": 96,
+      "kv_cache_bytes": 589824,
+      "kv_cache_kb": 576.0,
+      "sram_used_kb": 174.1,
+      "sram_remaining_kb": 337.9,
+      "psram_used_kb": 1810.4,
+      "psram_remaining_kb": 6381.6,
+      "total_runtime_ram_mb": 1.94,
+      "fit_sram": true,
+      "fit_psram": true,
+      "overall_fit": "FIT"
+    },
+    {
+      "context_length": 128,
+      "kv_cache_bytes": 786432,
+      "kv_cache_kb": 768.0,
+      "sram_used_kb": 174.2,
+      "sram_remaining_kb": 337.8,
+      "psram_used_kb": 2002.4,
+      "psram_remaining_kb": 6189.6,
+      "total_runtime_ram_mb": 2.13,
+      "fit_sram": true,
+      "fit_psram": true,
+      "overall_fit": "FIT"
+    },
+    {
+      "context_length": 160,
+      "kv_cache_bytes": 983040,
+      "kv_cache_kb": 960.0,
+      "sram_used_kb": 174.4,
+      "sram_remaining_kb": 337.6,
+      "psram_used_kb": 2194.4,
+      "psram_remaining_kb": 5997.6,
+      "total_runtime_ram_mb": 2.31,
+      "fit_sram": true,
+      "fit_psram": true,
+      "overall_fit": "FIT"
+    },
+    {
+      "context_length": 192,
+      "kv_cache_bytes": 1179648,
+      "kv_cache_kb": 1152.0,
+      "sram_used_kb": 174.5,
+      "sram_remaining_kb": 337.5,
+      "psram_used_kb": 2386.4,
+      "psram_remaining_kb": 5805.6,
+      "total_runtime_ram_mb": 2.5,
+      "fit_sram": true,
+      "fit_psram": true,
+      "overall_fit": "FIT"
+    },
+    {
+      "context_length": 256,
+      "kv_cache_bytes": 1572864,
+      "kv_cache_kb": 1536.0,
+      "sram_used_kb": 174.8,
+      "sram_remaining_kb": 337.2,
+      "psram_used_kb": 2770.4,
+      "psram_remaining_kb": 5421.6,
+      "total_runtime_ram_mb": 2.88,
+      "fit_sram": true,
+      "fit_psram": true,
+      "overall_fit": "FIT"
+    }
+  ],
+  "generation_length_sweep": [
+    {
+      "generated_tokens": 16,
+      "active_seq_len": 26,
+      "active_kv_cache_kb": 156.0,
+      "total_psram_used_kb": 1390.4,
+      "psram_headroom_mb": 6.64
+    },
+    {
+      "generated_tokens": 32,
+      "active_seq_len": 42,
+      "active_kv_cache_kb": 252.0,
+      "total_psram_used_kb": 1486.4,
+      "psram_headroom_mb": 6.55
+    },
+    {
+      "generated_tokens": 48,
+      "active_seq_len": 58,
+      "active_kv_cache_kb": 348.0,
+      "total_psram_used_kb": 1582.4,
+      "psram_headroom_mb": 6.45
+    },
+    {
+      "generated_tokens": 64,
+      "active_seq_len": 74,
+      "active_kv_cache_kb": 444.0,
+      "total_psram_used_kb": 1678.4,
+      "psram_headroom_mb": 6.36
+    },
+    {
+      "generated_tokens": 80,
+      "active_seq_len": 90,
+      "active_kv_cache_kb": 540.0,
+      "total_psram_used_kb": 1774.4,
+      "psram_headroom_mb": 6.27
+    },
+    {
+      "generated_tokens": 96,
+      "active_seq_len": 106,
+      "active_kv_cache_kb": 636.0,
+      "total_psram_used_kb": 1870.4,
+      "psram_headroom_mb": 6.17
+    },
+    {
+      "generated_tokens": 128,
+      "active_seq_len": 138,
+      "active_kv_cache_kb": 828.0,
+      "total_psram_used_kb": 2062.4,
+      "psram_headroom_mb": 5.99
+    }
+  ],
+  "pc_reference_inferences": [
+    {
+      "input_text": "pause the washing machine",
+      "generated_text": "{\"intent\":\"PAUSE\"}",
+      "generated_token_count": 5,
+      "valid_json": true,
+      "model_memory_footprint_int4_mb": 0.84,
+      "disclaimer": "ESP32 latency not measured; analytical estimate only."
+    },
+    {
+      "input_text": "set the spin to 600 rpm",
+      "generated_text": "{\"intent\":\"SET_SPIN_SPEED\",\"spin_speed\":600}",
+      "generated_token_count": 15,
+      "valid_json": true,
+      "model_memory_footprint_int4_mb": 0.84,
+      "disclaimer": "ESP32 latency not measured; analytical estimate only."
+    },
+    {
+      "input_text": "run the cotton wash at 30 degrees",
+      "generated_text": "{\"intent\":\"START_CYCLE\",\"program\":\"COTTON\"}",
+      "generated_token_count": 11,
+      "valid_json": true,
+      "model_memory_footprint_int4_mb": 0.84,
+      "disclaimer": "ESP32 latency not measured; analytical estimate only."
+    }
+  ],
+  "overall_feasibility": "GO"
+}

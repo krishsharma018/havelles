@@ -1,0 +1,99 @@
+{
+  "vocab_size": 1024,
+  "actual_vocab_size": 1024,
+  "tokenizer_path": "E:\\havells\\implementation\\washing_machine\\tokenizer\\vocab_1024\\tokenizer.json",
+  "special_token_ids": {
+    "BOS": 190,
+    "SEP": 219,
+    "EOS": 191
+  },
+  "loss_mask_spec": {
+    "0_no_loss": "BOS token + input tokens + SEP token",
+    "1_compute_loss": "target tokens + EOS token"
+  },
+  "splits": {
+    "train": {
+      "total_examples": 37950,
+      "sequence_length_stats": {
+        "min": 11,
+        "median": 27.0,
+        "mean": 38.82,
+        "p95": 82.0,
+        "p99": 101.0,
+        "max": 134
+      },
+      "coverage_at_context_lengths": {
+        "64": 84.81,
+        "80": 94.27,
+        "96": 98.44,
+        "128": 99.99,
+        "160": 100.0,
+        "192": 100.0,
+        "256": 100.0
+      },
+      "percentage_exceeding": {
+        "64": 15.19,
+        "80": 5.73,
+        "96": 1.56,
+        "128": 0.01,
+        "160": 0.0
+      }
+    },
+    "validation": {
+      "total_examples": 3000,
+      "sequence_length_stats": {
+        "min": 12,
+        "median": 31.0,
+        "mean": 46.51,
+        "p95": 96.0,
+        "p99": 114.01,
+        "max": 139
+      },
+      "coverage_at_context_lengths": {
+        "64": 72.87,
+        "80": 86.6,
+        "96": 95.73,
+        "128": 99.93,
+        "160": 100.0,
+        "192": 100.0,
+        "256": 100.0
+      },
+      "percentage_exceeding": {
+        "64": 27.13,
+        "80": 13.4,
+        "96": 4.27,
+        "128": 0.07,
+        "160": 0.0
+      }
+    },
+    "test": {
+      "total_examples": 3000,
+      "sequence_length_stats": {
+        "min": 13,
+        "median": 30.0,
+        "mean": 47.01,
+        "p95": 96.0,
+        "p99": 111.0,
+        "max": 135
+      },
+      "coverage_at_context_lengths": {
+        "64": 70.63,
+        "80": 85.0,
+        "96": 95.03,
+        "128": 99.83,
+        "160": 100.0,
+        "192": 100.0,
+        "256": 100.0
+      },
+      "percentage_exceeding": {
+        "64": 29.37,
+        "80": 15.0,
+        "96": 4.97,
+        "128": 0.17,
+        "160": 0.0
+      }
+    }
+  },
+  "total_errors": 0,
+  "errors": []
+}

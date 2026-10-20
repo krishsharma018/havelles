@@ -1,0 +1,166 @@
+{
+  "checkpoint_info": {
+    "path": "E:\\havells\\implementation\\washing_machine\\checkpoints\\best_washer_slm.pt",
+    "best_step": 5750,
+    "val_loss": 0.05025474303402007,
+    "val_accuracy": 0.9922617808314248
+  },
+  "evaluation_summary": {
+    "total_test_examples": 3000,
+    "valid_json_count": 2921,
+    "valid_json_pct": 97.37,
+    "exact_match_count": 1864,
+    "exact_match_pct": 62.13,
+    "intent_match_count": 2559,
+    "intent_match_pct": 85.3,
+    "malformed_json_count": 79,
+    "malformed_json_pct": 2.63,
+    "avg_generated_token_length": 23.29,
+    "max_generated_token_length": 71,
+    "evaluation_time_seconds": 661.15
+  },
+  "field_level_accuracy": {
+    "intent": {
+      "expected_count": 3000,
+      "correct_count": 2559,
+      "accuracy_pct": 85.3
+    },
+    "program": {
+      "expected_count": 1328,
+      "correct_count": 829,
+      "accuracy_pct": 62.42
+    },
+    "load_type": {
+      "expected_count": 577,
+      "correct_count": 504,
+      "accuracy_pct": 87.35
+    },
+    "soil_level": {
+      "expected_count": 571,
+      "correct_count": 484,
+      "accuracy_pct": 84.76
+    },
+    "stain_type": {
+      "expected_count": 341,
+      "correct_count": 324,
+      "accuracy_pct": 95.01
+    },
+    "temperature": {
+      "expected_count": 780,
+      "correct_count": 736,
+      "accuracy_pct": 94.36
+    },
+    "spin_speed": {
+      "expected_count": 803,
+      "correct_count": 635,
+      "accuracy_pct": 79.08
+    },
+    "wash_duration": {
+      "expected_count": 607,
+      "correct_count": 587,
+      "accuracy_pct": 96.71
+    },
+    "disabled_options": {
+      "expected_count": 116,
+      "correct_count": 116,
+      "accuracy_pct": 100.0
+    },
+    "constraints": {
+      "expected_count": 684,
+      "correct_count": 578,
+      "accuracy_pct": 84.5
+    }
+  },
+  "per_intent_accuracy": {
+    "CANCEL": {
+      "total_examples": 31,
+      "intent_accuracy_pct": 12.9,
+      "exact_json_match_pct": 12.9
+    },
+    "DISABLE_OPTION": {
+      "total_examples": 116,
+      "intent_accuracy_pct": 100.0,
+      "exact_json_match_pct": 100.0
+    },
+    "ENABLE_OPTION": {
+      "total_examples": 100,
+      "intent_accuracy_pct": 100.0,
+      "exact_json_match_pct": 100.0
+    },
+    "PAUSE": {
+      "total_examples": 32,
+      "intent_accuracy_pct": 34.38,
+      "exact_json_match_pct": 34.38
+    },
+    "QUERY_PROGRAM": {
+      "total_examples": 32,
+      "intent_accuracy_pct": 68.75,
+      "exact_json_match_pct": 68.75
+    },
+    "QUERY_REMAINING_TIME": {
+      "total_examples": 33,
+      "intent_accuracy_pct": 57.58,
+      "exact_json_match_pct": 57.58
+    },
+    "QUERY_STATUS": {
+      "total_examples": 35,
+      "intent_accuracy_pct": 65.71,
+      "exact_json_match_pct": 65.71
+    },
+    "RESUME": {
+      "total_examples": 26,
+      "intent_accuracy_pct": 73.08,
+      "exact_json_match_pct": 73.08
+    },
+    "SELECT_PROGRAM": {
+      "total_examples": 211,
+      "intent_accuracy_pct": 48.82,
+      "exact_json_match_pct": 48.82
+    },
+    "SET_DRY": {
+      "total_examples": 111,
+      "intent_accuracy_pct": 99.1,
+      "exact_json_match_pct": 99.1
+    },
+    "SET_RINSE": {
+      "total_examples": 79,
+      "intent_accuracy_pct": 100.0,
+      "exact_json_match_pct": 100.0
+    },
+    "SET_SOAK": {
+      "total_examples": 112,
+      "intent_accuracy_pct": 96.43,
+      "exact_json_match_pct": 95.54
+    },
+    "SET_SPIN_SPEED": {
+      "total_examples": 200,
+      "intent_accuracy_pct": 55.5,
+      "exact_json_match_pct": 54.5
+    },
+    "SET_TEMPERATURE": {
+      "total_examples": 147,
+      "intent_accuracy_pct": 89.8,
+      "exact_json_match_pct": 82.99
+    },
+    "SET_WASH_DURATION": {
+      "total_examples": 175,
+      "intent_accuracy_pct": 99.43,
+      "exact_json_match_pct": 99.43
+    },
+    "SET_WATER_LEVEL": {
+      "total_examples": 136,
+      "intent_accuracy_pct": 96.32,
+      "exact_json_match_pct": 96.32
+    },
+    "START_CYCLE": {
+      "total_examples": 1393,
+      "intent_accuracy_pct": 92.32,
+      "exact_json_match_pct": 43.36
+    },
+    "STOP": {
+      "total_examples": 31,
+      "intent_accuracy_pct": 35.48,
+      "exact_json_match_pct": 35.48
+    }
+  }
+}

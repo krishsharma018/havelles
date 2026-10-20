@@ -1,0 +1,101 @@
+{
+  "train": {
+    "total_examples": 37950,
+    "original_target_character_stats": {
+      "min": 682,
+      "median": 726.0,
+      "mean": 728.37,
+      "p95": 757.0,
+      "max": 829
+    },
+    "original_target_token_stats": {
+      "min": 124,
+      "median": 124.0,
+      "mean": 124.8,
+      "p95": 128.0,
+      "max": 138
+    },
+    "minimal_target_character_stats": {
+      "min": 17,
+      "median": 49.0,
+      "mean": 76.52,
+      "p95": 186.0,
+      "max": 321
+    },
+    "minimal_target_token_stats": {
+      "min": 5,
+      "median": 9.0,
+      "mean": 15.47,
+      "p95": 37.0,
+      "max": 59
+    },
+    "character_reduction_percentage": 89.49,
+    "token_reduction_percentage": 87.6
+  },
+  "validation": {
+    "total_examples": 3000,
+    "original_target_character_stats": {
+      "min": 692,
+      "median": 726.0,
+      "mean": 729.74,
+      "p95": 760.0,
+      "max": 811
+    },
+    "original_target_token_stats": {
+      "min": 124,
+      "median": 124.0,
+      "mean": 125.01,
+      "p95": 128.0,
+      "max": 134
+    },
+    "minimal_target_character_stats": {
+      "min": 17,
+      "median": 58.0,
+      "mean": 82.85,
+      "p95": 196.0,
+      "max": 273
+    },
+    "minimal_target_token_stats": {
+      "min": 5,
+      "median": 11.0,
+      "mean": 16.66,
+      "p95": 39.0,
+      "max": 53
+    },
+    "character_reduction_percentage": 88.65,
+    "token_reduction_percentage": 86.67
+  },
+  "test": {
+    "total_examples": 3000,
+    "original_target_character_stats": {
+      "min": 690,
+      "median": 727.0,
+      "mean": 730.61,
+      "p95": 762.05,
+      "max": 816
+    },
+    "original_target_token_stats": {
+      "min": 124,
+      "median": 124.0,
+      "mean": 125.1,
+      "p95": 128.0,
+      "max": 134
+    },
+    "minimal_target_character_stats": {
+      "min": 17,
+      "median": 58.0,
+      "mean": 84.89,
+      "p95": 196.0,
+      "max": 285
+    },
+    "minimal_target_token_stats": {
+      "min": 5,
+      "median": 11.0,
+      "mean": 16.97,
+      "p95": 39.0,
+      "max": 55
+    },
+    "character_reduction_percentage": 88.38,
+    "token_reduction_percentage": 86.43
+  }
+}

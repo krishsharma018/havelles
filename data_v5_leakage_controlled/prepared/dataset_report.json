@@ -1,0 +1,910 @@
+{
+  "split_counts": {
+    "train_total": 37950,
+    "train_original_24k": 24000,
+    "train_augmented": 13950,
+    "validation": 3000,
+    "test": 3000
+  },
+  "malformed_examples": {
+    "total": 0,
+    "details": []
+  },
+  "schema": {
+    "top_level_fields_count": 30,
+    "exact_field_order": [
+      "intent",
+      "program_concept",
+      "program_source",
+      "load_type",
+      "load_type_source",
+      "soil_level",
+      "soil_level_source",
+      "stain_type",
+      "stain_type_source",
+      "temperature",
+      "temperature_source",
+      "temperature_constraint",
+      "spin_speed",
+      "spin_speed_source",
+      "spin_speed_constraint",
+      "water_level",
+      "water_level_source",
+      "water_level_constraint",
+      "wash_duration",
+      "wash_duration_source",
+      "soak",
+      "soak_source",
+      "soak_duration",
+      "rinse_count",
+      "dry",
+      "dry_source",
+      "dry_duration",
+      "options",
+      "disabled_options",
+      "constraints"
+    ]
+  },
+  "duplicate_and_leakage_results": {
+    "duplicate_inputs": {
+      "train": 0,
+      "validation": 0,
+      "test": 0
+    },
+    "duplicate_pairs": {
+      "train": 0,
+      "validation": 0,
+      "test": 0
+    },
+    "input_overlaps": {
+      "train_vs_validation": 0,
+      "train_vs_test": 0,
+      "validation_vs_test": 0
+    },
+    "pair_overlaps": {
+      "train_vs_validation": 0,
+      "train_vs_test": 0,
+      "validation_vs_test": 0
+    }
+  },
+  "distributions": {
+    "train": {
+      "intent_distribution": {
+        "START_CYCLE": 21703,
+        "SELECT_PROGRAM": 2919,
+        "SET_SPIN_SPEED": 1246,
+        "SET_TEMPERATURE": 1208,
+        "DISABLE_OPTION": 1023,
+        "SET_WASH_DURATION": 913,
+        "ENABLE_OPTION": 903,
+        "SET_WATER_LEVEL": 867,
+        "CANCEL": 798,
+        "PAUSE": 793,
+        "RESUME": 792,
+        "STOP": 783,
+        "QUERY_REMAINING_TIME": 768,
+        "QUERY_STATUS": 755,
+        "QUERY_PROGRAM": 749,
+        "SET_SOAK": 640,
+        "SET_DRY": 620,
+        "SET_RINSE": 470
+      },
+      "program_distribution": {
+        "None": 15995,
+        "GENTLE": 1978,
+        "SYNTHETIC": 1647,
+        "JEANS": 1632,
+        "WOOL": 1629,
+        "MIXED": 1624,
+        "COTTON": 1621,
+        "HEAVY": 1405,
+        "DRUM_CLEAN": 1344,
+        "SPIN": 1339,
+        "DRAIN": 1311,
+        "NORMAL": 1310,
+        "DELICATE": 1301,
+        "RINSE": 1288,
+        "QUICK": 1270,
+        "DRY": 1256
+      },
+      "categorical_field_distributions": {
+        "intent": {
+          "START_CYCLE": 21703,
+          "SELECT_PROGRAM": 2919,
+          "SET_SPIN_SPEED": 1246,
+          "SET_TEMPERATURE": 1208,
+          "DISABLE_OPTION": 1023,
+          "SET_WASH_DURATION": 913,
+          "ENABLE_OPTION": 903,
+          "SET_WATER_LEVEL": 867,
+          "CANCEL": 798,
+          "PAUSE": 793,
+          "RESUME": 792,
+          "STOP": 783,
+          "QUERY_REMAINING_TIME": 768,
+          "QUERY_STATUS": 755,
+          "QUERY_PROGRAM": 749,
+          "SET_SOAK": 640,
+          "SET_DRY": 620,
+          "SET_RINSE": 470
+        },
+        "program_source": {
+          "USER": 19842,
+          "UNSPECIFIED": 15995,
+          "INFERRED": 2113
+        },
+        "load_type_source": {
+          "UNSPECIFIED": 32406,
+          "USER": 5544
+        },
+        "soil_level_source": {
+          "UNSPECIFIED": 32515,
+          "INFERRED": 5435
+        },
+        "stain_type_source": {
+          "UNSPECIFIED": 34957,
+          "USER": 2993
+        },
+        "temperature_source": {
+          "UNSPECIFIED": 27702,
+          "USER": 10248
+        },
+        "spin_speed_source": {
+          "UNSPECIFIED": 28310,
+          "USER": 9640
+        },
+        "water_level_source": {
+          "UNSPECIFIED": 31018,
+          "USER": 6932
+        },
+        "wash_duration_source": {
+          "UNSPECIFIED": 32949,
+          "USER": 5001
+        },
+        "soak_source": {
+          "UNSPECIFIED": 36878,
+          "USER": 1072
+        },
+        "dry_source": {
+          "UNSPECIFIED": 35178,
+          "USER": 2772
+        },
+        "disabled_options[]": {
+          "EXTRA_RINSE": 176,
+          "SOAK": 146,
+          "PREWASH": 146,
+          "STAIN_REMOVAL": 143,
+          "STEAM": 143,
+          "CHILD_LOCK": 135,
+          "DRUM_CLEAN": 134
+        },
+        "wash_duration": {
+          "40": 626,
+          "15": 620,
+          "60": 572,
+          "20": 570,
+          "45": 551,
+          "30": 541,
+          "90": 522,
+          "10": 515,
+          "25": 484
+        },
+        "program_concept": {
+          "GENTLE": 1978,
+          "SYNTHETIC": 1647,
+          "JEANS": 1632,
+          "WOOL": 1629,
+          "MIXED": 1624,
+          "COTTON": 1621,
+          "HEAVY": 1405,
+          "DRUM_CLEAN": 1344,
+          "SPIN": 1339,
+          "DRAIN": 1311,
+          "NORMAL": 1310,
+          "DELICATE": 1301,
+          "RINSE": 1288,
+          "QUICK": 1270,
+          "DRY": 1256
+        },
+        "load_type": {
+          "BABY_CLOTHES": 819,
+          "DELICATE": 813,
+          "WOOL": 790,
+          "JEANS": 789,
+          "MIXED": 784,
+          "COTTON": 784,
+          "SYNTHETIC": 765
+        },
+        "soil_level": {
+          "HEAVY": 1826,
+          "LIGHT": 1816,
+          "NORMAL": 1793
+        },
+        "stain_type": {
+          "SWEAT": 785,
+          "FOOD": 738,
+          "DIRT": 738,
+          "OIL": 732
+        },
+        "temperature": {
+          "40": 1871,
+          "30": 1693,
+          "60": 1691,
+          "WARM": 1685,
+          "COLD": 1659,
+          "20": 1649
+        },
+        "options[]": {
+          "STAIN_REMOVAL": 3443,
+          "DRUM_CLEAN": 584,
+          "EXTRA_RINSE": 580,
+          "STEAM": 578,
+          "CHILD_LOCK": 563,
+          "SOAK": 540,
+          "PREWASH": 526
+        },
+        "constraints.cleaning_priority": {
+          "HIGH": 4428
+        },
+        "spin_speed": {
+          "1000": 1239,
+          "800": 1229,
+          "600": 1229,
+          "LOW": 1227,
+          "HIGH": 1194,
+          "1200": 1182,
+          "400": 1171,
+          "MEDIUM": 1169
+        },
+        "constraints.time_priority": {
+          "HIGH": 1816
+        },
+        "spin_speed_constraint": {
+          "NOT_HIGH": 885,
+          "NOT_LOW": 843
+        },
+        "constraints.fabric_care_priority": {
+          "HIGH": 827
+        },
+        "soak": {
+          "True": 969,
+          "False": 103
+        },
+        "dry": {
+          "True": 2672,
+          "False": 100
+        },
+        "dry_duration": {
+          "20": 408,
+          "30": 386,
+          "45": 349,
+          "10": 288,
+          "60": 89
+        },
+        "soak_duration": {
+          "10": 164,
+          "15": 152,
+          "20": 149,
+          "30": 147,
+          "45": 89
+        },
+        "water_level": {
+          "HIGH": 1769,
+          "LOW": 1733,
+          "MEDIUM": 1729,
+          "AUTO": 1701
+        },
+        "rinse_count": {
+          "1": 166,
+          "2": 158,
+          "3": 146
+        },
+        "temperature_constraint": {
+          "NOT_COLD": 586,
+          "NOT_HOT": 561
+        }
+      }
+    },
+    "validation": {
+      "intent_distribution": {
+        "START_CYCLE": 1378,
+        "SET_SPIN_SPEED": 193,
+        "SELECT_PROGRAM": 188,
+        "SET_TEMPERATURE": 185,
+        "SET_WATER_LEVEL": 156,
+        "SET_WASH_DURATION": 138,
+        "DISABLE_OPTION": 122,
+        "SET_DRY": 118,
+        "SET_SOAK": 107,
+        "ENABLE_OPTION": 106,
+        "SET_RINSE": 76,
+        "PAUSE": 40,
+        "STOP": 39,
+        "QUERY_PROGRAM": 38,
+        "QUERY_STATUS": 34,
+        "CANCEL": 31,
+        "RESUME": 28,
+        "QUERY_REMAINING_TIME": 23
+      },
+      "program_distribution": {
+        "None": 1697,
+        "GENTLE": 129,
+        "JEANS": 125,
+        "COTTON": 105,
+        "SYNTHETIC": 93,
+        "RINSE": 90,
+        "WOOL": 85,
+        "QUICK": 80,
+        "MIXED": 80,
+        "DRUM_CLEAN": 79,
+        "DRAIN": 75,
+        "DRY": 74,
+        "NORMAL": 74,
+        "HEAVY": 72,
+        "DELICATE": 72,
+        "SPIN": 70
+      },
+      "categorical_field_distributions": {
+        "intent": {
+          "START_CYCLE": 1378,
+          "SET_SPIN_SPEED": 193,
+          "SELECT_PROGRAM": 188,
+          "SET_TEMPERATURE": 185,
+          "SET_WATER_LEVEL": 156,
+          "SET_WASH_DURATION": 138,
+          "DISABLE_OPTION": 122,
+          "SET_DRY": 118,
+          "SET_SOAK": 107,
+          "ENABLE_OPTION": 106,
+          "SET_RINSE": 76,
+          "PAUSE": 40,
+          "STOP": 39,
+          "QUERY_PROGRAM": 38,
+          "QUERY_STATUS": 34,
+          "CANCEL": 31,
+          "RESUME": 28,
+          "QUERY_REMAINING_TIME": 23
+        },
+        "program_source": {
+          "UNSPECIFIED": 1697,
+          "USER": 1098,
+          "INFERRED": 205
+        },
+        "load_type_source": {
+          "UNSPECIFIED": 2470,
+          "USER": 530
+        },
+        "soil_level_source": {
+          "UNSPECIFIED": 2454,
+          "INFERRED": 546
+        },
+        "stain_type_source": {
+          "UNSPECIFIED": 2679,
+          "USER": 321
+        },
+        "temperature_source": {
+          "UNSPECIFIED": 2181,
+          "USER": 819
+        },
+        "spin_speed_source": {
+          "UNSPECIFIED": 2186,
+          "USER": 814
+        },
+        "water_level_source": {
+          "UNSPECIFIED": 2514,
+          "USER": 486
+        },
+        "wash_duration": {
+          "90": 72,
+          "40": 71,
+          "10": 68,
+          "25": 65,
+          "60": 63,
+          "45": 62,
+          "15": 58,
+          "30": 53,
+          "20": 51
+        },
+        "wash_duration_source": {
+          "UNSPECIFIED": 2437,
+          "USER": 563
+        },
+        "soak_source": {
+          "UNSPECIFIED": 2819,
+          "USER": 181
+        },
+        "dry_source": {
+          "UNSPECIFIED": 2650,
+          "USER": 350
+        },
+        "program_concept": {
+          "GENTLE": 129,
+          "JEANS": 125,
+          "COTTON": 105,
+          "SYNTHETIC": 93,
+          "RINSE": 90,
+          "WOOL": 85,
+          "QUICK": 80,
+          "MIXED": 80,
+          "DRUM_CLEAN": 79,
+          "DRAIN": 75,
+          "DRY": 74,
+          "NORMAL": 74,
+          "HEAVY": 72,
+          "DELICATE": 72,
+          "SPIN": 70
+        },
+        "load_type": {
+          "JEANS": 96,
+          "MIXED": 86,
+          "COTTON": 79,
+          "BABY_CLOTHES": 77,
+          "WOOL": 68,
+          "DELICATE": 63,
+          "SYNTHETIC": 61
+        },
+        "soil_level": {
+          "NORMAL": 196,
+          "HEAVY": 182,
+          "LIGHT": 168
+        },
+        "stain_type": {
+          "DIRT": 90,
+          "OIL": 82,
+          "FOOD": 78,
+          "SWEAT": 71
+        },
+        "temperature": {
+          "40": 150,
+          "COLD": 144,
+          "20": 142,
+          "60": 132,
+          "WARM": 128,
+          "30": 123
+        },
+        "spin_speed_constraint": {
+          "NOT_LOW": 102,
+          "NOT_HIGH": 83
+        },
+        "options[]": {
+          "STAIN_REMOVAL": 383,
+          "SOAK": 89,
+          "PREWASH": 60,
+          "EXTRA_RINSE": 58,
+          "STEAM": 52,
+          "DRUM_CLEAN": 45,
+          "CHILD_LOCK": 41
+        },
+        "constraints.cleaning_priority": {
+          "HIGH": 441
+        },
+        "constraints.fabric_care_priority": {
+          "HIGH": 69
+        },
+        "spin_speed": {
+          "LOW": 123,
+          "400": 112,
+          "MEDIUM": 106,
+          "600": 105,
+          "800": 102,
+          "HIGH": 99,
+          "1000": 84,
+          "1200": 83
+        },
+        "rinse_count": {
+          "2": 28,
+          "3": 25,
+          "1": 23
+        },
+        "soak": {
+          "True": 169,
+          "False": 12
+        },
+        "disabled_options[]": {
+          "EXTRA_RINSE": 21,
+          "PREWASH": 19,
+          "STAIN_REMOVAL": 19,
+          "STEAM": 19,
+          "DRUM_CLEAN": 17,
+          "CHILD_LOCK": 15,
+          "SOAK": 12
+        },
+        "soak_duration": {
+          "20": 38,
+          "15": 37,
+          "10": 34,
+          "45": 18,
+          "30": 12
+        },
+        "water_level": {
+          "LOW": 139,
+          "MEDIUM": 130,
+          "AUTO": 117,
+          "HIGH": 100
+        },
+        "dry": {
+          "True": 334,
+          "False": 16
+        },
+        "dry_duration": {
+          "10": 54,
+          "45": 53,
+          "30": 45,
+          "20": 29,
+          "60": 19
+        },
+        "temperature_constraint": {
+          "NOT_HOT": 66,
+          "NOT_COLD": 51
+        },
+        "constraints.time_priority": {
+          "HIGH": 168
+        }
+      }
+    },
+    "test": {
+      "intent_distribution": {
+        "START_CYCLE": 1393,
+        "SELECT_PROGRAM": 211,
+        "SET_SPIN_SPEED": 200,
+        "SET_WASH_DURATION": 175,
+        "SET_TEMPERATURE": 147,
+        "SET_WATER_LEVEL": 136,
+        "DISABLE_OPTION": 116,
+        "SET_SOAK": 112,
+        "SET_DRY": 111,
+        "ENABLE_OPTION": 100,
+        "SET_RINSE": 79,
+        "QUERY_STATUS": 35,
+        "QUERY_REMAINING_TIME": 33,
+        "QUERY_PROGRAM": 32,
+        "PAUSE": 32,
+        "CANCEL": 31,
+        "STOP": 31,
+        "RESUME": 26
+      },
+      "program_distribution": {
+        "None": 1672,
+        "GENTLE": 130,
+        "COTTON": 113,
+        "WOOL": 110,
+        "SYNTHETIC": 106,
+        "JEANS": 101,
+        "MIXED": 91,
+        "DRUM_CLEAN": 86,
+        "SPIN": 83,
+        "QUICK": 83,
+        "NORMAL": 78,
+        "DELICATE": 72,
+        "DRY": 72,
+        "DRAIN": 71,
+        "RINSE": 69,
+        "HEAVY": 63
+      },
+      "categorical_field_distributions": {
+        "intent": {
+          "START_CYCLE": 1393,
+          "SELECT_PROGRAM": 211,
+          "SET_SPIN_SPEED": 200,
+          "SET_WASH_DURATION": 175,
+          "SET_TEMPERATURE": 147,
+          "SET_WATER_LEVEL": 136,
+          "DISABLE_OPTION": 116,
+          "SET_SOAK": 112,
+          "SET_DRY": 111,
+          "ENABLE_OPTION": 100,
+          "SET_RINSE": 79,
+          "QUERY_STATUS": 35,
+          "QUERY_REMAINING_TIME": 33,
+          "QUERY_PROGRAM": 32,
+          "PAUSE": 32,
+          "CANCEL": 31,
+          "STOP": 31,
+          "RESUME": 26
+        },
+        "program_concept": {
+          "GENTLE": 130,
+          "COTTON": 113,
+          "WOOL": 110,
+          "SYNTHETIC": 106,
+          "JEANS": 101,
+          "MIXED": 91,
+          "DRUM_CLEAN": 86,
+          "SPIN": 83,
+          "QUICK": 83,
+          "NORMAL": 78,
+          "DELICATE": 72,
+          "DRY": 72,
+          "DRAIN": 71,
+          "RINSE": 69,
+          "HEAVY": 63
+        },
+        "program_source": {
+          "UNSPECIFIED": 1672,
+          "USER": 1141,
+          "INFERRED": 187
+        },
+        "load_type_source": {
+          "UNSPECIFIED": 2423,
+          "USER": 577
+        },
+        "soil_level": {
+          "HEAVY": 198,
+          "LIGHT": 193,
+          "NORMAL": 180
+        },
+        "soil_level_source": {
+          "UNSPECIFIED": 2429,
+          "INFERRED": 571
+        },
+        "stain_type_source": {
+          "UNSPECIFIED": 2659,
+          "USER": 341
+        },
+        "temperature_source": {
+          "UNSPECIFIED": 2220,
+          "USER": 780
+        },
+        "temperature_constraint": {
+          "NOT_HOT": 75,
+          "NOT_COLD": 72
+        },
+        "spin_speed_source": {
+          "UNSPECIFIED": 2197,
+          "USER": 803
+        },
+        "water_level_source": {
+          "UNSPECIFIED": 2531,
+          "USER": 469
+        },
+        "wash_duration_source": {
+          "UNSPECIFIED": 2393,
+          "USER": 607
+        },
+        "soak_source": {
+          "UNSPECIFIED": 2846,
+          "USER": 154
+        },
+        "dry_source": {
+          "UNSPECIFIED": 2636,
+          "USER": 364
+        },
+        "constraints.time_priority": {
+          "HIGH": 193
+        },
+        "spin_speed": {
+          "HIGH": 120,
+          "MEDIUM": 115,
+          "600": 105,
+          "1000": 97,
+          "LOW": 96,
+          "800": 94,
+          "400": 92,
+          "1200": 84
+        },
+        "disabled_options[]": {
+          "SOAK": 28,
+          "EXTRA_RINSE": 22,
+          "CHILD_LOCK": 16,
+          "STAIN_REMOVAL": 15,
+          "STEAM": 15,
+          "PREWASH": 13,
+          "DRUM_CLEAN": 7
+        },
+        "load_type": {
+          "WOOL": 96,
+          "SYNTHETIC": 90,
+          "DELICATE": 84,
+          "BABY_CLOTHES": 82,
+          "COTTON": 76,
+          "MIXED": 75,
+          "JEANS": 74
+        },
+        "temperature": {
+          "40": 160,
+          "20": 131,
+          "30": 128,
+          "WARM": 124,
+          "COLD": 120,
+          "60": 117
+        },
+        "water_level": {
+          "AUTO": 135,
+          "LOW": 121,
+          "HIGH": 108,
+          "MEDIUM": 105
+        },
+        "dry": {
+          "True": 347,
+          "False": 17
+        },
+        "dry_duration": {
+          "45": 59,
+          "30": 50,
+          "20": 45,
+          "10": 43,
+          "60": 16
+        },
+        "stain_type": {
+          "FOOD": 97,
+          "DIRT": 91,
+          "SWEAT": 88,
+          "OIL": 65
+        },
+        "options[]": {
+          "STAIN_REMOVAL": 377,
+          "EXTRA_RINSE": 61,
+          "PREWASH": 60,
+          "SOAK": 56,
+          "DRUM_CLEAN": 51,
+          "STEAM": 41,
+          "CHILD_LOCK": 39
+        },
+        "constraints.cleaning_priority": {
+          "HIGH": 504
+        },
+        "wash_duration": {
+          "15": 95,
+          "90": 71,
+          "25": 69,
+          "30": 66,
+          "45": 66,
+          "10": 63,
+          "40": 62,
+          "20": 58,
+          "60": 57
+        },
+        "spin_speed_constraint": {
+          "NOT_HIGH": 90,
+          "NOT_LOW": 90
+        },
+        "constraints.fabric_care_priority": {
+          "HIGH": 85
+        },
+        "soak": {
+          "True": 142,
+          "False": 12
+        },
+        "soak_duration": {
+          "30": 28,
+          "10": 26,
+          "20": 22,
+          "15": 16,
+          "45": 15
+        },
+        "rinse_count": {
+          "1": 31,
+          "3": 24,
+          "2": 24
+        }
+      }
+    }
+  },
+  "missing_null_counts": {
+    "train": {
+      "program_concept": 15995,
+      "load_type": 32406,
+      "soil_level": 32515,
+      "stain_type": 34957,
+      "temperature": 27702,
+      "temperature_constraint": 36803,
+      "spin_speed": 28310,
+      "spin_speed_constraint": 36222,
+      "water_level": 31018,
+      "water_level_constraint": 37950,
+      "wash_duration": 32949,
+      "soak": 36878,
+      "soak_duration": 37249,
+      "rinse_count": 37480,
+      "dry": 35178,
+      "dry_duration": 36430
+    },
+    "validation": {
+      "program_concept": 1697,
+      "load_type": 2470,
+      "soil_level": 2454,
+      "stain_type": 2679,
+      "temperature": 2181,
+      "temperature_constraint": 2883,
+      "spin_speed": 2186,
+      "spin_speed_constraint": 2815,
+      "water_level": 2514,
+      "water_level_constraint": 3000,
+      "soak": 2819,
+      "soak_duration": 2861,
+      "rinse_count": 2924,
+      "dry": 2650,
+      "dry_duration": 2800,
+      "wash_duration": 2437
+    },
+    "test": {
+      "load_type": 2423,
+      "stain_type": 2659,
+      "temperature": 2220,
+      "spin_speed": 2197,
+      "spin_speed_constraint": 2820,
+      "water_level": 2531,
+      "water_level_constraint": 3000,
+      "wash_duration": 2393,
+      "soak": 2846,
+      "soak_duration": 2893,
+      "rinse_count": 2921,
+      "dry": 2636,
+      "dry_duration": 2787,
+      "program_concept": 1672,
+      "soil_level": 2429,
+      "temperature_constraint": 2853
+    }
+  },
+  "length_statistics": {
+    "train": {
+      "input_word_lengths": {
+        "min": 2,
+        "median": 9.0,
+        "mean": 12.26,
+        "p95": 25.0,
+        "max": 40
+      },
+      "target_json_char_lengths": {
+        "min": 682,
+        "median": 726.0,
+        "mean": 728.37,
+        "p95": 757.0,
+        "max": 829
+      },
+      "target_json_token_estimates": {
+        "min": 124,
+        "median": 124.0,
+        "mean": 124.8,
+        "p95": 128.0,
+        "max": 138
+      }
+    },
+    "validation": {
+      "input_word_lengths": {
+        "min": 2,
+        "median": 10.0,
+        "mean": 13.44,
+        "p95": 28.0,
+        "max": 45
+      },
+      "target_json_char_lengths": {
+        "min": 692,
+        "median": 726.0,
+        "mean": 729.74,
+        "p95": 760.0,
+        "max": 811
+      },
+      "target_json_token_estimates": {
+        "min": 124,
+        "median": 124.0,
+        "mean": 125.01,
+        "p95": 128.0,
+        "max": 134
+      }
+    },
+    "test": {
+      "input_word_lengths": {
+        "min": 2,
+        "median": 9.0,
+        "mean": 12.9,
+        "p95": 27.0,
+        "max": 38
+      },
+      "target_json_char_lengths": {
+        "min": 690,
+        "median": 727.0,
+        "mean": 730.61,
+        "p95": 762.05,
+        "max": 816
+      },
+      "target_json_token_estimates": {
+        "min": 124,
+        "median": 124.0,
+        "mean": 125.1,
+        "p95": 128.0,
+        "max": 134
+      }
+    }
+  }
+}

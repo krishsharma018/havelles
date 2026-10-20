@@ -1,0 +1,91 @@
+== train ==
+rows: 24000
+unique_inputs: 24000
+unique_outputs: 7204
+intent_counts:
+  START_CYCLE: 13503
+  SELECT_PROGRAM: 1719
+  SET_SPIN_SPEED: 1246
+  SET_TEMPERATURE: 1208
+  DISABLE_OPTION: 1023
+  SET_WASH_DURATION: 913
+  ENABLE_OPTION: 903
+  SET_WATER_LEVEL: 867
+  SET_SOAK: 640
+  SET_DRY: 620
+  SET_RINSE: 470
+  CANCEL: 148
+  PAUSE: 143
+  RESUME: 142
+  STOP: 133
+  QUERY_REMAINING_TIME: 118
+  QUERY_STATUS: 105
+  QUERY_PROGRAM: 99
+
+== validation ==
+rows: 3000
+unique_inputs: 3000
+unique_outputs: 936
+intent_counts:
+  START_CYCLE: 1378
+  SET_SPIN_SPEED: 193
+  SELECT_PROGRAM: 188
+  SET_TEMPERATURE: 185
+  SET_WATER_LEVEL: 156
+  SET_WASH_DURATION: 138
+  DISABLE_OPTION: 122
+  SET_DRY: 118
+  SET_SOAK: 107
+  ENABLE_OPTION: 106
+  SET_RINSE: 76
+  PAUSE: 40
+  STOP: 39
+  QUERY_PROGRAM: 38
+  QUERY_STATUS: 34
+  CANCEL: 31
+  RESUME: 28
+  QUERY_REMAINING_TIME: 23
+
+== test ==
+rows: 3000
+unique_inputs: 3000
+unique_outputs: 938
+intent_counts:
+  START_CYCLE: 1393
+  SELECT_PROGRAM: 211
+  SET_SPIN_SPEED: 200
+  SET_WASH_DURATION: 175
+  SET_TEMPERATURE: 147
+  SET_WATER_LEVEL: 136
+  DISABLE_OPTION: 116
+  SET_SOAK: 112
+  SET_DRY: 111
+  ENABLE_OPTION: 100
+  SET_RINSE: 79
+  QUERY_STATUS: 35
+  QUERY_REMAINING_TIME: 33
+  QUERY_PROGRAM: 32
+  PAUSE: 32
+  CANCEL: 31
+  STOP: 31
+  RESUME: 26
+
+== leakage_checks ==
+train vs validation exact_input_overlap: 0
+train vs validation exact_output_overlap_all: 84
+train vs validation start_cycle_output_overlap: 0
+train vs validation complex_start_output_overlap: 0
+train vs test exact_input_overlap: 0
+train vs test exact_output_overlap_all: 84
+train vs test start_cycle_output_overlap: 0
+train vs test complex_start_output_overlap: 0
+validation vs test exact_input_overlap: 0
+validation vs test exact_output_overlap_all: 84
+validation vs test start_cycle_output_overlap: 0
+validation vs test complex_start_output_overlap: 0
+
+Split policy:
+- Exact input overlap is forbidden across all splits.
+- START_CYCLE semantic scenarios are split before text generation, so their target JSONs do not overlap.
+- Train/validation/test use separate language-template families.
+- Atomic and finite single-slot labels can repeat across splits because they are the actual labels the model must learn.

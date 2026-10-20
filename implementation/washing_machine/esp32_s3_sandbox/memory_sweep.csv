@@ -1,0 +1,8 @@
+context_length,kv_cache_bytes,kv_cache_kb,sram_used_kb,sram_remaining_kb,psram_used_kb,psram_remaining_kb,total_runtime_ram_mb,fit_sram,fit_psram,overall_fit
+32,196608,192.0,173.9,338.1,1426.4,6765.6,1.56,True,True,FIT
+64,393216,384.0,174.0,338.0,1618.4,6573.6,1.75,True,True,FIT
+96,589824,576.0,174.1,337.9,1810.4,6381.6,1.94,True,True,FIT
+128,786432,768.0,174.2,337.8,2002.4,6189.6,2.13,True,True,FIT
+160,983040,960.0,174.4,337.6,2194.4,5997.6,2.31,True,True,FIT
+192,1179648,1152.0,174.5,337.5,2386.4,5805.6,2.5,True,True,FIT
+256,1572864,1536.0,174.8,337.2,2770.4,5421.6,2.88,True,True,FIT

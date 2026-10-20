@@ -1,0 +1,247 @@
+{
+  "title": "WashingMachineIntentSchemaV5",
+  "type": "object",
+  "description": "Canonical washing machine NLP instruction target schema V5",
+  "exact_field_order": [
+    "intent",
+    "program_concept",
+    "program_source",
+    "load_type",
+    "load_type_source",
+    "soil_level",
+    "soil_level_source",
+    "stain_type",
+    "stain_type_source",
+    "temperature",
+    "temperature_source",
+    "temperature_constraint",
+    "spin_speed",
+    "spin_speed_source",
+    "spin_speed_constraint",
+    "water_level",
+    "water_level_source",
+    "water_level_constraint",
+    "wash_duration",
+    "wash_duration_source",
+    "soak",
+    "soak_source",
+    "soak_duration",
+    "rinse_count",
+    "dry",
+    "dry_source",
+    "dry_duration",
+    "options",
+    "disabled_options",
+    "constraints"
+  ],
+  "properties": {
+    "intent": {
+      "type": "string",
+      "nullable": false,
+      "description": "Top-level command intent"
+    },
+    "program_concept": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "nullable": true,
+      "description": "Washing program/cycle name"
+    },
+    "program_source": {
+      "type": "string",
+      "enum": [
+        "USER",
+        "INFERRED",
+        "UNSPECIFIED"
+      ]
+    },
+    "load_type": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "nullable": true
+    },
+    "load_type_source": {
+      "type": "string",
+      "enum": [
+        "USER",
+        "UNSPECIFIED"
+      ]
+    },
+    "soil_level": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "nullable": true
+    },
+    "soil_level_source": {
+      "type": "string",
+      "enum": [
+        "INFERRED",
+        "UNSPECIFIED"
+      ]
+    },
+    "stain_type": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "nullable": true
+    },
+    "stain_type_source": {
+      "type": "string",
+      "enum": [
+        "USER",
+        "UNSPECIFIED"
+      ]
+    },
+    "temperature": {
+      "type": [
+        "integer",
+        "string",
+        "null"
+      ],
+      "nullable": true
+    },
+    "temperature_source": {
+      "type": "string",
+      "enum": [
+        "USER",
+        "UNSPECIFIED"
+      ]
+    },
+    "temperature_constraint": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "nullable": true
+    },
+    "spin_speed": {
+      "type": [
+        "integer",
+        "string",
+        "null"
+      ],
+      "nullable": true
+    },
+    "spin_speed_source": {
+      "type": "string",
+      "enum": [
+        "USER",
+        "UNSPECIFIED"
+      ]
+    },
+    "spin_speed_constraint": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "nullable": true
+    },
+    "water_level": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "nullable": true
+    },
+    "water_level_source": {
+      "type": "string",
+      "enum": [
+        "USER",
+        "UNSPECIFIED"
+      ]
+    },
+    "water_level_constraint": {
+      "type": [
+        "null"
+      ],
+      "nullable": true
+    },
+    "wash_duration": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "nullable": true
+    },
+    "wash_duration_source": {
+      "type": "string",
+      "enum": [
+        "USER",
+        "UNSPECIFIED"
+      ]
+    },
+    "soak": {
+      "type": [
+        "boolean",
+        "null"
+      ],
+      "nullable": true
+    },
+    "soak_source": {
+      "type": "string",
+      "enum": [
+        "USER",
+        "UNSPECIFIED"
+      ]
+    },
+    "soak_duration": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "nullable": true
+    },
+    "rinse_count": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "nullable": true
+    },
+    "dry": {
+      "type": [
+        "boolean",
+        "null"
+      ],
+      "nullable": true
+    },
+    "dry_source": {
+      "type": "string",
+      "enum": [
+        "USER",
+        "UNSPECIFIED"
+      ]
+    },
+    "dry_duration": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "nullable": true
+    },
+    "options": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "disabled_options": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "constraints": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    }
+  }
+}

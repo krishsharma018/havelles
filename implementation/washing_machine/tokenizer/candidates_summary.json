@@ -1,0 +1,224 @@
+{
+  "512": {
+    "algorithm": "ByteLevel-BPE",
+    "library": "huggingface/tokenizers",
+    "pre_tokenizer": "ByteLevel(add_prefix_space=False, use_regex=True)",
+    "decoder": "ByteLevel",
+    "added_tokens": [],
+    "vocab_size_requested": 512,
+    "vocab_size_actual": 512,
+    "esp32_runtime_compatible": true,
+    "btk1_format": "version_2",
+    "special_tokens": {
+      "BOS": {
+        "char": "'\\x02'",
+        "token_id": 190,
+        "is_single_token": true
+      },
+      "SEP": {
+        "char": "'\\x1f'",
+        "token_id": 219,
+        "is_single_token": true
+      },
+      "EOS": {
+        "char": "'\\x03'",
+        "token_id": 191,
+        "is_single_token": true
+      }
+    },
+    "special_token_encoding": "reserved_ascii_bytes_no_added_tokens",
+    "tokenizer_sha256": "76390f14838e229351f52195d03c751a943343625b47b169cecdd9982d9b8649",
+    "notes": [
+      "No added_tokens — compatible with BTK1 packer (generate_tokenizer_header.py)",
+      "Special tokens are reserved ASCII bytes: BOS=\\x02, SEP=\\x1f, EOS=\\x03",
+      "These bytes are guaranteed single-token IDs via the 256-byte BTK1 table",
+      "Non-ASCII input rejected by runtime (bpe_encode_ascii)",
+      "Corpus: 37,950 NL inputs + 37,950 minimal JSON targets (TRAIN ONLY)"
+    ]
+  },
+  "768": {
+    "algorithm": "ByteLevel-BPE",
+    "library": "huggingface/tokenizers",
+    "pre_tokenizer": "ByteLevel(add_prefix_space=False, use_regex=True)",
+    "decoder": "ByteLevel",
+    "added_tokens": [],
+    "vocab_size_requested": 768,
+    "vocab_size_actual": 768,
+    "esp32_runtime_compatible": true,
+    "btk1_format": "version_2",
+    "special_tokens": {
+      "BOS": {
+        "char": "'\\x02'",
+        "token_id": 190,
+        "is_single_token": true
+      },
+      "SEP": {
+        "char": "'\\x1f'",
+        "token_id": 219,
+        "is_single_token": true
+      },
+      "EOS": {
+        "char": "'\\x03'",
+        "token_id": 191,
+        "is_single_token": true
+      }
+    },
+    "special_token_encoding": "reserved_ascii_bytes_no_added_tokens",
+    "tokenizer_sha256": "b424caaf4356094348edf9a97f905d17f1ad0ce2d1b733bcaade705bf600561c",
+    "notes": [
+      "No added_tokens — compatible with BTK1 packer (generate_tokenizer_header.py)",
+      "Special tokens are reserved ASCII bytes: BOS=\\x02, SEP=\\x1f, EOS=\\x03",
+      "These bytes are guaranteed single-token IDs via the 256-byte BTK1 table",
+      "Non-ASCII input rejected by runtime (bpe_encode_ascii)",
+      "Corpus: 37,950 NL inputs + 37,950 minimal JSON targets (TRAIN ONLY)"
+    ]
+  },
+  "1024": {
+    "algorithm": "ByteLevel-BPE",
+    "library": "huggingface/tokenizers",
+    "pre_tokenizer": "ByteLevel(add_prefix_space=False, use_regex=True)",
+    "decoder": "ByteLevel",
+    "added_tokens": [],
+    "vocab_size_requested": 1024,
+    "vocab_size_actual": 1024,
+    "esp32_runtime_compatible": true,
+    "btk1_format": "version_2",
+    "special_tokens": {
+      "BOS": {
+        "char": "'\\x02'",
+        "token_id": 190,
+        "is_single_token": true
+      },
+      "SEP": {
+        "char": "'\\x1f'",
+        "token_id": 219,
+        "is_single_token": true
+      },
+      "EOS": {
+        "char": "'\\x03'",
+        "token_id": 191,
+        "is_single_token": true
+      }
+    },
+    "special_token_encoding": "reserved_ascii_bytes_no_added_tokens",
+    "tokenizer_sha256": "fb80b3ca0fda4f73d0eaa93716ca0e0da6163c3cd8d1ade35bd78fd1c764aec7",
+    "notes": [
+      "No added_tokens — compatible with BTK1 packer (generate_tokenizer_header.py)",
+      "Special tokens are reserved ASCII bytes: BOS=\\x02, SEP=\\x1f, EOS=\\x03",
+      "These bytes are guaranteed single-token IDs via the 256-byte BTK1 table",
+      "Non-ASCII input rejected by runtime (bpe_encode_ascii)",
+      "Corpus: 37,950 NL inputs + 37,950 minimal JSON targets (TRAIN ONLY)"
+    ]
+  },
+  "1536": {
+    "algorithm": "ByteLevel-BPE",
+    "library": "huggingface/tokenizers",
+    "pre_tokenizer": "ByteLevel(add_prefix_space=False, use_regex=True)",
+    "decoder": "ByteLevel",
+    "added_tokens": [],
+    "vocab_size_requested": 1536,
+    "vocab_size_actual": 1374,
+    "esp32_runtime_compatible": true,
+    "btk1_format": "version_2",
+    "special_tokens": {
+      "BOS": {
+        "char": "'\\x02'",
+        "token_id": 190,
+        "is_single_token": true
+      },
+      "SEP": {
+        "char": "'\\x1f'",
+        "token_id": 219,
+        "is_single_token": true
+      },
+      "EOS": {
+        "char": "'\\x03'",
+        "token_id": 191,
+        "is_single_token": true
+      }
+    },
+    "special_token_encoding": "reserved_ascii_bytes_no_added_tokens",
+    "tokenizer_sha256": "4ca172c0defcbf8f1b0d0e21cb45d3e464b55e67e2bb0808bbd869232f79b75b",
+    "notes": [
+      "No added_tokens — compatible with BTK1 packer (generate_tokenizer_header.py)",
+      "Special tokens are reserved ASCII bytes: BOS=\\x02, SEP=\\x1f, EOS=\\x03",
+      "These bytes are guaranteed single-token IDs via the 256-byte BTK1 table",
+      "Non-ASCII input rejected by runtime (bpe_encode_ascii)",
+      "Corpus: 37,950 NL inputs + 37,950 minimal JSON targets (TRAIN ONLY)"
+    ]
+  },
+  "2048": {
+    "algorithm": "ByteLevel-BPE",
+    "library": "huggingface/tokenizers",
+    "pre_tokenizer": "ByteLevel(add_prefix_space=False, use_regex=True)",
+    "decoder": "ByteLevel",
+    "added_tokens": [],
+    "vocab_size_requested": 2048,
+    "vocab_size_actual": 1374,
+    "esp32_runtime_compatible": true,
+    "btk1_format": "version_2",
+    "special_tokens": {
+      "BOS": {
+        "char": "'\\x02'",
+        "token_id": 190,
+        "is_single_token": true
+      },
+      "SEP": {
+        "char": "'\\x1f'",
+        "token_id": 219,
+        "is_single_token": true
+      },
+      "EOS": {
+        "char": "'\\x03'",
+        "token_id": 191,
+        "is_single_token": true
+      }
+    },
+    "special_token_encoding": "reserved_ascii_bytes_no_added_tokens",
+    "tokenizer_sha256": "4ca172c0defcbf8f1b0d0e21cb45d3e464b55e67e2bb0808bbd869232f79b75b",
+    "notes": [
+      "No added_tokens — compatible with BTK1 packer (generate_tokenizer_header.py)",
+      "Special tokens are reserved ASCII bytes: BOS=\\x02, SEP=\\x1f, EOS=\\x03",
+      "These bytes are guaranteed single-token IDs via the 256-byte BTK1 table",
+      "Non-ASCII input rejected by runtime (bpe_encode_ascii)",
+      "Corpus: 37,950 NL inputs + 37,950 minimal JSON targets (TRAIN ONLY)"
+    ]
+  },
+  "4096": {
+    "algorithm": "ByteLevel-BPE",
+    "library": "huggingface/tokenizers",
+    "pre_tokenizer": "ByteLevel(add_prefix_space=False, use_regex=True)",
+    "decoder": "ByteLevel",
+    "added_tokens": [],
+    "vocab_size_requested": 4096,
+    "vocab_size_actual": 1374,
+    "esp32_runtime_compatible": true,
+    "btk1_format": "version_2",
+    "special_tokens": {
+      "BOS": {
+        "char": "'\\x02'",
+        "token_id": 190,
+        "is_single_token": true
+      },
+      "SEP": {
+        "char": "'\\x1f'",
+        "token_id": 219,
+        "is_single_token": true
+      },
+      "EOS": {
+        "char": "'\\x03'",
+        "token_id": 191,
+        "is_single_token": true
+      }
+    },
+    "special_token_encoding": "reserved_ascii_bytes_no_added_tokens",
+    "tokenizer_sha256": "4ca172c0defcbf8f1b0d0e21cb45d3e464b55e67e2bb0808bbd869232f79b75b",
+    "notes": [
+      "No added_tokens — compatible with BTK1 packer (generate_tokenizer_header.py)",
+      "Special tokens are reserved ASCII bytes: BOS=\\x02, SEP=\\x1f, EOS=\\x03",
+      "These bytes are guaranteed single-token IDs via the 256-byte BTK1 table",
+      "Non-ASCII input rejected by runtime (bpe_encode_ascii)",
+      "Corpus: 37,950 NL inputs + 37,950 minimal JSON targets (TRAIN ONLY)"
+    ]
+  }
+}

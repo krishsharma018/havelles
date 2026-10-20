@@ -1,0 +1,3074 @@
+{
+  "512": {
+    "vocab_size_requested": 512,
+    "vocab_size_actual": 512,
+    "splits": {
+      "train": {
+        "total_examples": 37950,
+        "input_token_lengths": {
+          "min": 3,
+          "median": 18.0,
+          "mean": 24.94,
+          "p95": 54.0,
+          "p99": 67.0,
+          "max": 93
+        },
+        "target_token_lengths": {
+          "min": 7,
+          "median": 20.0,
+          "mean": 26.24,
+          "p95": 58.0,
+          "p99": 73.0,
+          "max": 104
+        },
+        "combined_token_lengths": {
+          "min": 15,
+          "median": 40.0,
+          "mean": 54.18,
+          "p95": 114.0,
+          "p99": 142.0,
+          "max": 194
+        },
+        "percentage_exceeding_thresholds": {
+          "32": {
+            "combined": 68.9,
+            "input": 31.5,
+            "target": 29.62
+          },
+          "48": {
+            "combined": 41.24,
+            "input": 9.27,
+            "target": 11.03
+          },
+          "64": {
+            "combined": 33.88,
+            "input": 1.46,
+            "target": 2.69
+          },
+          "80": {
+            "combined": 20.55,
+            "input": 0.08,
+            "target": 0.37
+          },
+          "96": {
+            "combined": 11.31,
+            "input": 0.0,
+            "target": 0.01
+          },
+          "128": {
+            "combined": 2.37,
+            "input": 0.0,
+            "target": 0.0
+          },
+          "160": {
+            "combined": 0.18,
+            "input": 0.0,
+            "target": 0.0
+          },
+          "192": {
+            "combined": 0.0,
+            "input": 0.0,
+            "target": 0.0
+          },
+          "256": {
+            "combined": 0.0,
+            "input": 0.0,
+            "target": 0.0
+          }
+        }
+      },
+      "validation": {
+        "total_examples": 3000,
+        "input_token_lengths": {
+          "min": 6,
+          "median": 22.0,
+          "mean": 34.39,
+          "p95": 75.0,
+          "p99": 88.0,
+          "max": 117
+        },
+        "target_token_lengths": {
+          "min": 7,
+          "median": 23.0,
+          "mean": 29.15,
+          "p95": 62.0,
+          "p99": 75.0,
+          "max": 88
+        },
+        "combined_token_lengths": {
+          "min": 17,
+          "median": 47.0,
+          "mean": 66.54,
+          "p95": 136.0,
+          "p99": 162.01,
+          "max": 204
+        },
+        "percentage_exceeding_thresholds": {
+          "32": {
+            "combined": 90.23,
+            "input": 43.73,
+            "target": 31.93
+          },
+          "48": {
+            "combined": 48.67,
+            "input": 29.8,
+            "target": 13.17
+          },
+          "64": {
+            "combined": 42.7,
+            "input": 12.33,
+            "target": 3.9
+          },
+          "80": {
+            "combined": 33.57,
+            "input": 2.83,
+            "target": 0.47
+          },
+          "96": {
+            "combined": 22.6,
+            "input": 0.23,
+            "target": 0.0
+          },
+          "128": {
+            "combined": 7.7,
+            "input": 0.0,
+            "target": 0.0
+          },
+          "160": {
+            "combined": 1.13,
+            "input": 0.0,
+            "target": 0.0
+          },
+          "192": {
+            "combined": 0.07,
+            "input": 0.0,
+            "target": 0.0
+          },
+          "256": {
+            "combined": 0.0,
+            "input": 0.0,
+            "target": 0.0
+          }
+        }
+      },
+      "test": {
+        "total_examples": 3000,
+        "input_token_lengths": {
+          "min": 6,
+          "median": 22.0,
+          "mean": 33.83,
+          "p95": 73.0,
+          "p99": 86.0,
+          "max": 104
+        },
+        "target_token_lengths": {
+          "min": 7,
+          "median": 23.0,
+          "mean": 29.74,
+          "p95": 62.0,
+          "p99": 74.0,
+          "max": 92
+        },
+        "combined_token_lengths": {
+          "min": 17,
+          "median": 47.0,
+          "mean": 66.57,
+          "p95": 137.0,
+          "p99": 156.01,
+          "max": 198
+        },
+        "percentage_exceeding_thresholds": {
+          "32": {
+            "combined": 88.13,
+            "input": 43.27,
+            "target": 34.5
+          },
+          "48": {
+            "combined": 48.83,
+            "input": 30.03,
+            "target": 14.93
+          },
+          "64": {
+            "combined": 42.0,
+            "input": 12.1,
+            "target": 3.4
+          },
+          "80": {
+            "combined": 34.7,
+            "input": 2.3,
+            "target": 0.17
+          },
+          "96": {
+            "combined": 24.87,
+            "input": 0.2,
+            "target": 0.0
+          },
+          "128": {
+            "combined": 7.23,
+            "input": 0.0,
+            "target": 0.0
+          },
+          "160": {
+            "combined": 0.7,
+            "input": 0.0,
+            "target": 0.0
+          },
+          "192": {
+            "combined": 0.03,
+            "input": 0.0,
+            "target": 0.0
+          },
+          "256": {
+            "combined": 0.0,
+            "input": 0.0,
+            "target": 0.0
+          }
+        }
+      }
+    },
+    "json_token_efficiency": {
+      "syntax_{": {
+        "text": "{",
+        "tokens": [
+          90
+        ],
+        "count": 1
+      },
+      "syntax_}": {
+        "text": "}",
+        "tokens": [
+          92
+        ],
+        "count": 1
+      },
+      "syntax_[": {
+        "text": "[",
+        "tokens": [
+          58
+        ],
+        "count": 1
+      },
+      "syntax_]": {
+        "text": "]",
+        "tokens": [
+          60
+        ],
+        "count": 1
+      },
+      "syntax_:": {
+        "text": ":",
+        "tokens": [
+          25
+        ],
+        "count": 1
+      },
+      "syntax_,": {
+        "text": ",",
+        "tokens": [
+          11
+        ],
+        "count": 1
+      },
+      "syntax_\"": {
+        "text": "\"",
+        "tokens": [
+          1
+        ],
+        "count": 1
+      },
+      "syntax_null": {
+        "text": "null",
+        "tokens": [
+          77,
+          84,
+          75,
+          75
+        ],
+        "count": 4
+      },
+      "key_intent": {
+        "text": "intent",
+        "standalone_tokens": 1,
+        "quoted_colon_tokens": 3,
+        "quoted_colon_ids": [
+          1,
+          272,
+          256
+        ]
+      },
+      "key_program": {
+        "text": "program",
+        "standalone_tokens": 1,
+        "quoted_colon_tokens": 3,
+        "quoted_colon_ids": [
+          1,
+          283,
+          256
+        ]
+      },
+      "key_load_type": {
+        "text": "load_type",
+        "standalone_tokens": 3,
+        "quoted_colon_tokens": 5,
+        "quoted_colon_ids": [
+          1,
+          317,
+          62,
+          365,
+          256
+        ]
+      },
+      "key_soil_level": {
+        "text": "soil_level",
+        "standalone_tokens": 3,
+        "quoted_colon_tokens": 5,
+        "quoted_colon_ids": [
+          1,
+          417,
+          62,
+          312,
+          256
+        ]
+      },
+      "key_stain_type": {
+        "text": "stain_type",
+        "standalone_tokens": 4,
+        "quoted_colon_tokens": 6,
+        "quoted_colon_ids": [
+          1,
+          466,
+          257,
+          62,
+          365,
+          256
+        ]
+      },
+      "key_temperature": {
+        "text": "temperature",
+        "standalone_tokens": 1,
+        "quoted_colon_tokens": 3,
+        "quoted_colon_ids": [
+          1,
+          333,
+          256
+        ]
+      },
+      "key_temperature_constraint": {
+        "text": "temperature_constraint",
+        "standalone_tokens": 3,
+        "quoted_colon_tokens": 5,
+        "quoted_colon_ids": [
+          1,
+          333,
+          62,
+          363,
+          256
+        ]
+      },
+      "key_spin_speed": {
+        "text": "spin_speed",
+        "standalone_tokens": 3,
+        "quoted_colon_tokens": 5,
+        "quoted_colon_ids": [
+          1,
+          341,
+          62,
+          342,
+          256
+        ]
+      },
+      "key_spin_speed_constraint": {
+        "text": "spin_speed_constraint",
+        "standalone_tokens": 5,
+        "quoted_colon_tokens": 7,
+        "quoted_colon_ids": [
+          1,
+          341,
+          62,
+          342,
+          62,
+          363,
+          256
+        ]
+      },
+      "key_water_level": {
+        "text": "water_level",
+        "standalone_tokens": 3,
+        "quoted_colon_tokens": 5,
+        "quoted_colon_ids": [
+          1,
+          396,
+          62,
+          312,
+          256
+        ]
+      },
+      "key_wash_duration": {
+        "text": "wash_duration",
+        "standalone_tokens": 3,
+        "quoted_colon_tokens": 5,
+        "quoted_colon_ids": [
+          1,
+          414,
+          62,
+          385,
+          256
+        ]
+      },
+      "key_soak_duration": {
+        "text": "soak_duration",
+        "standalone_tokens": 6,
+        "quoted_colon_tokens": 8,
+        "quoted_colon_ids": [
+          1,
+          82,
+          78,
+          64,
+          74,
+          62,
+          385,
+          256
+        ]
+      },
+      "key_rinse_count": {
+        "text": "rinse_count",
+        "standalone_tokens": 7,
+        "quoted_colon_tokens": 9,
+        "quoted_colon_ids": [
+          1,
+          81,
+          257,
+          278,
+          62,
+          66,
+          299,
+          266,
+          256
+        ]
+      },
+      "key_dry_duration": {
+        "text": "dry_duration",
+        "standalone_tokens": 4,
+        "quoted_colon_tokens": 6,
+        "quoted_colon_ids": [
+          1,
+          67,
+          367,
+          62,
+          385,
+          256
+        ]
+      },
+      "key_options": {
+        "text": "options",
+        "standalone_tokens": 1,
+        "quoted_colon_tokens": 3,
+        "quoted_colon_ids": [
+          1,
+          382,
+          256
+        ]
+      },
+      "key_disabled_options": {
+        "text": "disabled_options",
+        "standalone_tokens": 7,
+        "quoted_colon_tokens": 9,
+        "quoted_colon_ids": [
+          1,
+          67,
+          319,
+          499,
+          262,
+          67,
+          62,
+          382,
+          256
+        ]
+      },
+      "key_constraints": {
+        "text": "constraints",
+        "standalone_tokens": 1,
+        "quoted_colon_tokens": 3,
+        "quoted_colon_ids": [
+          1,
+          406,
+          256
+        ]
+      },
+      "val_START_CYCLE": {
+        "text": "START_CYCLE",
+        "tokens": [
+          296,
+          62,
+          297
+        ],
+        "count": 3
+      },
+      "val_SELECT_PROGRAM": {
+        "text": "SELECT_PROGRAM",
+        "tokens": [
+          337,
+          279,
+          34,
+          51,
+          62,
+          487
+        ],
+        "count": 6
+      },
+      "val_SET_TEMPERATURE": {
+        "text": "SET_TEMPERATURE",
+        "tokens": [
+          410,
+          62,
+          456,
+          44,
+          47,
+          36,
+          371,
+          51,
+          52,
+          391
+        ],
+        "count": 10
+      },
+      "val_SET_SPIN_SPEED": {
+        "text": "SET_SPIN_SPEED",
+        "tokens": [
+          410,
+          62,
+          474,
+          339,
+          62,
+          474,
+          36,
+          401
+        ],
+        "count": 8
+      },
+      "val_PAUSE": {
+        "text": "PAUSE",
+        "tokens": [
+          47,
+          32,
+          52,
+          337
+        ],
+        "count": 4
+      },
+      "val_RESUME": {
+        "text": "RESUME",
+        "tokens": [
+          391,
+          50,
+          415,
+          36
+        ],
+        "count": 4
+      },
+      "val_STOP": {
+        "text": "STOP",
+        "tokens": [
+          286,
+          46,
+          47
+        ],
+        "count": 3
+      },
+      "val_CANCEL": {
+        "text": "CANCEL",
+        "tokens": [
+          34,
+          32,
+          45,
+          34,
+          477
+        ],
+        "count": 5
+      },
+      "val_QUERY_STATUS": {
+        "text": "QUERY_STATUS",
+        "tokens": [
+          494,
+          36,
+          461,
+          62,
+          288,
+          51,
+          52,
+          50
+        ],
+        "count": 8
+      },
+      "val_QUERY_PROGRAM": {
+        "text": "QUERY_PROGRAM",
+        "tokens": [
+          494,
+          36,
+          461,
+          62,
+          487
+        ],
+        "count": 5
+      },
+      "val_QUERY_REMAINING_TIME": {
+        "text": "QUERY_REMAINING_TIME",
+        "tokens": [
+          494,
+          36,
+          461,
+          62,
+          453,
+          32,
+          339,
+          339,
+          38,
+          62,
+          409,
+          44,
+          36
+        ],
+        "count": 13
+      },
+      "val_DISABLE_OPTION": {
+        "text": "DISABLE_OPTION",
+        "tokens": [
+          35,
+          40,
+          50,
+          32,
+          33,
+          279,
+          62,
+          46,
+          47,
+          409,
+          421
+        ],
+        "count": 11
+      },
+      "val_ENABLE_OPTION": {
+        "text": "ENABLE_OPTION",
+        "tokens": [
+          36,
+          45,
+          32,
+          33,
+          279,
+          62,
+          46,
+          47,
+          409,
+          421
+        ],
+        "count": 10
+      },
+      "val_SET_WASH_DURATION": {
+        "text": "SET_WASH_DURATION",
+        "tokens": [
+          410,
+          62,
+          462,
+          50,
+          39,
+          62,
+          35,
+          52,
+          371,
+          409,
+          421
+        ],
+        "count": 11
+      },
+      "val_SET_WATER_LEVEL": {
+        "text": "SET_WATER_LEVEL",
+        "tokens": [
+          410,
+          62,
+          462,
+          456,
+          49,
+          62,
+          279,
+          53,
+          477
+        ],
+        "count": 9
+      },
+      "val_SET_SOAK": {
+        "text": "SET_SOAK",
+        "tokens": [
+          410,
+          62,
+          50,
+          46,
+          32,
+          42
+        ],
+        "count": 6
+      },
+      "val_SET_DRY": {
+        "text": "SET_DRY",
+        "tokens": [
+          410,
+          62,
+          35,
+          461
+        ],
+        "count": 4
+      },
+      "val_SET_RINSE": {
+        "text": "SET_RINSE",
+        "tokens": [
+          410,
+          62,
+          49,
+          339,
+          337
+        ],
+        "count": 5
+      },
+      "val_COTTON": {
+        "text": "COTTON",
+        "tokens": [
+          34,
+          400,
+          51,
+          421
+        ],
+        "count": 4
+      },
+      "val_DELICATE": {
+        "text": "DELICATE",
+        "tokens": [
+          35,
+          477,
+          497,
+          32,
+          456
+        ],
+        "count": 5
+      },
+      "val_WOOL": {
+        "text": "WOOL",
+        "tokens": [
+          54,
+          46,
+          437
+        ],
+        "count": 3
+      },
+      "val_QUICK": {
+        "text": "QUICK",
+        "tokens": [
+          494,
+          497,
+          42
+        ],
+        "count": 3
+      },
+      "val_NORMAL": {
+        "text": "NORMAL",
+        "tokens": [
+          510,
+          511
+        ],
+        "count": 2
+      },
+      "val_JEANS": {
+        "text": "JEANS",
+        "tokens": [
+          41,
+          386,
+          45,
+          50
+        ],
+        "count": 4
+      },
+      "val_MIXED": {
+        "text": "MIXED",
+        "tokens": [
+          44,
+          40,
+          55,
+          401
+        ],
+        "count": 4
+      },
+      "val_SYNTHETIC": {
+        "text": "SYNTHETIC",
+        "tokens": [
+          50,
+          56,
+          452,
+          500,
+          409,
+          34
+        ],
+        "count": 6
+      },
+      "val_HEAVY": {
+        "text": "HEAVY",
+        "tokens": [
+          504
+        ],
+        "count": 1
+      },
+      "val_GENTLE": {
+        "text": "GENTLE",
+        "tokens": [
+          38,
+          36,
+          452,
+          279
+        ],
+        "count": 4
+      },
+      "val_DRAIN": {
+        "text": "DRAIN",
+        "tokens": [
+          35,
+          371,
+          339
+        ],
+        "count": 3
+      },
+      "val_RINSE": {
+        "text": "RINSE",
+        "tokens": [
+          49,
+          339,
+          337
+        ],
+        "count": 3
+      },
+      "val_SPIN": {
+        "text": "SPIN",
+        "tokens": [
+          474,
+          339
+        ],
+        "count": 2
+      },
+      "val_DRUM_CLEAN": {
+        "text": "DRUM_CLEAN",
+        "tokens": [
+          35,
+          49,
+          415,
+          62,
+          291,
+          32,
+          45
+        ],
+        "count": 7
+      },
+      "val_DRY": {
+        "text": "DRY",
+        "tokens": [
+          35,
+          461
+        ],
+        "count": 2
+      },
+      "val_BABY_CLOTHES": {
+        "text": "BABY_CLOTHES",
+        "tokens": [
+          33,
+          32,
+          33,
+          56,
+          62,
+          34,
+          43,
+          400,
+          500,
+          50
+        ],
+        "count": 10
+      },
+      "val_LIGHT": {
+        "text": "LIGHT",
+        "tokens": [
+          43,
+          325,
+          51
+        ],
+        "count": 3
+      },
+      "val_SWEAT": {
+        "text": "SWEAT",
+        "tokens": [
+          50,
+          54,
+          386,
+          51
+        ],
+        "count": 4
+      },
+      "val_FOOD": {
+        "text": "FOOD",
+        "tokens": [
+          37,
+          46,
+          46,
+          35
+        ],
+        "count": 4
+      },
+      "val_DIRT": {
+        "text": "DIRT",
+        "tokens": [
+          35,
+          40,
+          293
+        ],
+        "count": 3
+      },
+      "val_OIL": {
+        "text": "OIL",
+        "tokens": [
+          46,
+          40,
+          43
+        ],
+        "count": 3
+      },
+      "val_COLD": {
+        "text": "COLD",
+        "tokens": [
+          34,
+          437,
+          35
+        ],
+        "count": 3
+      },
+      "val_WARM": {
+        "text": "WARM",
+        "tokens": [
+          462,
+          435
+        ],
+        "count": 2
+      },
+      "val_NOT_HOT": {
+        "text": "NOT_HOT",
+        "tokens": [
+          45,
+          400,
+          62,
+          39,
+          400
+        ],
+        "count": 5
+      },
+      "val_NOT_COLD": {
+        "text": "NOT_COLD",
+        "tokens": [
+          45,
+          400,
+          62,
+          34,
+          437,
+          35
+        ],
+        "count": 6
+      },
+      "val_LOW": {
+        "text": "LOW",
+        "tokens": [
+          476
+        ],
+        "count": 1
+      },
+      "val_MEDIUM": {
+        "text": "MEDIUM",
+        "tokens": [
+          44,
+          401,
+          40,
+          415
+        ],
+        "count": 4
+      },
+      "val_HIGH": {
+        "text": "HIGH",
+        "tokens": [
+          345
+        ],
+        "count": 1
+      },
+      "val_AUTO": {
+        "text": "AUTO",
+        "tokens": [
+          32,
+          52,
+          51,
+          46
+        ],
+        "count": 4
+      },
+      "val_NOT_HIGH": {
+        "text": "NOT_HIGH",
+        "tokens": [
+          45,
+          400,
+          62,
+          345
+        ],
+        "count": 4
+      },
+      "val_NOT_LOW": {
+        "text": "NOT_LOW",
+        "tokens": [
+          45,
+          400,
+          62,
+          476
+        ],
+        "count": 4
+      },
+      "val_STAIN_REMOVAL": {
+        "text": "STAIN_REMOVAL",
+        "tokens": [
+          491,
+          62,
+          493
+        ],
+        "count": 3
+      },
+      "val_EXTRA_RINSE": {
+        "text": "EXTRA_RINSE",
+        "tokens": [
+          36,
+          55,
+          51,
+          371,
+          62,
+          49,
+          339,
+          337
+        ],
+        "count": 8
+      },
+      "val_PREWASH": {
+        "text": "PREWASH",
+        "tokens": [
+          47,
+          391,
+          462,
+          50,
+          39
+        ],
+        "count": 5
+      },
+      "val_STEAM": {
+        "text": "STEAM",
+        "tokens": [
+          286,
+          386,
+          44
+        ],
+        "count": 3
+      },
+      "val_CHILD_LOCK": {
+        "text": "CHILD_LOCK",
+        "tokens": [
+          34,
+          39,
+          40,
+          43,
+          35,
+          62,
+          445,
+          34,
+          42
+        ],
+        "count": 9
+      },
+      "val_SOAK": {
+        "text": "SOAK",
+        "tokens": [
+          50,
+          46,
+          32,
+          42
+        ],
+        "count": 4
+      },
+      "val_null": {
+        "text": "null",
+        "tokens": [
+          77,
+          84,
+          75,
+          75
+        ],
+        "count": 4
+      },
+      "val_true": {
+        "text": "true",
+        "tokens": [
+          83,
+          81,
+          84,
+          68
+        ],
+        "count": 4
+      },
+      "val_false": {
+        "text": "false",
+        "tokens": [
+          69,
+          447,
+          278
+        ],
+        "count": 3
+      }
+    }
+  },
+  "768": {
+    "vocab_size_requested": 768,
+    "vocab_size_actual": 768,
+    "splits": {
+      "train": {
+        "total_examples": 37950,
+        "input_token_lengths": {
+          "min": 2,
+          "median": 14.0,
+          "mean": 18.63,
+          "p95": 40.0,
+          "p99": 49.0,
+          "max": 71
+        },
+        "target_token_lengths": {
+          "min": 6,
+          "median": 15.0,
+          "mean": 21.07,
+          "p95": 49.0,
+          "p99": 62.0,
+          "max": 88
+        },
+        "combined_token_lengths": {
+          "min": 13,
+          "median": 30.0,
+          "mean": 42.71,
+          "p95": 91.0,
+          "p99": 112.0,
+          "max": 148
+        },
+        "percentage_exceeding_thresholds": {
+          "32": {
+            "combined": 45.58,
+            "input": 14.33,
+            "target": 19.44
+          },
+          "48": {
+            "combined": 36.42,
+            "input": 1.2,
+            "target": 5.33
+          },
+          "64": {
+            "combined": 19.85,
+            "input": 0.02,
+            "target": 0.73
+          },
+          "80": {
+            "combined": 9.49,
+            "input": 0.0,
+            "target": 0.02
+          },
+          "96": {
+            "combined": 3.48,
+            "input": 0.0,
+            "target": 0.0
+          },
+          "128": {
+            "combined": 0.16,
+            "input": 0.0,
+            "target": 0.0
+          },
+          "160": {
+            "combined": 0.0,
+            "input": 0.0,
+            "target": 0.0
+          },
+          "192": {
+            "combined": 0.0,
+            "input": 0.0,
+            "target": 0.0
+          },
+          "256": {
+            "combined": 0.0,
+            "input": 0.0,
+            "target": 0.0
+          }
+        }
+      },
+      "validation": {
+        "total_examples": 3000,
+        "input_token_lengths": {
+          "min": 5,
+          "median": 18.0,
+          "mean": 26.11,
+          "p95": 55.0,
+          "p99": 64.01,
+          "max": 89
+        },
+        "target_token_lengths": {
+          "min": 6,
+          "median": 16.0,
+          "mean": 23.06,
+          "p95": 52.0,
+          "p99": 64.0,
+          "max": 78
+        },
+        "combined_token_lengths": {
+          "min": 15,
+          "median": 35.0,
+          "mean": 52.17,
+          "p95": 107.0,
+          "p99": 128.01,
+          "max": 170
+        },
+        "percentage_exceeding_thresholds": {
+          "32": {
+            "combined": 57.37,
+            "input": 36.3,
+            "target": 24.33
+          },
+          "48": {
+            "combined": 43.43,
+            "input": 11.2,
+            "target": 7.53
+          },
+          "64": {
+            "combined": 33.43,
+            "input": 1.0,
+            "target": 0.8
+          },
+          "80": {
+            "combined": 20.4,
+            "input": 0.07,
+            "target": 0.0
+          },
+          "96": {
+            "combined": 9.93,
+            "input": 0.0,
+            "target": 0.0
+          },
+          "128": {
+            "combined": 1.0,
+            "input": 0.0,
+            "target": 0.0
+          },
+          "160": {
+            "combined": 0.03,
+            "input": 0.0,
+            "target": 0.0
+          },
+          "192": {
+            "combined": 0.0,
+            "input": 0.0,
+            "target": 0.0
+          },
+          "256": {
+            "combined": 0.0,
+            "input": 0.0,
+            "target": 0.0
+          }
+        }
+      },
+      "test": {
+        "total_examples": 3000,
+        "input_token_lengths": {
+          "min": 4,
+          "median": 17.0,
+          "mean": 25.9,
+          "p95": 56.0,
+          "p99": 66.01,
+          "max": 83
+        },
+        "target_token_lengths": {
+          "min": 6,
+          "median": 16.0,
+          "mean": 23.6,
+          "p95": 52.05,
+          "p99": 62.0,
+          "max": 77
+        },
+        "combined_token_lengths": {
+          "min": 14,
+          "median": 34.0,
+          "mean": 52.49,
+          "p95": 108.05,
+          "p99": 125.01,
+          "max": 163
+        },
+        "percentage_exceeding_thresholds": {
+          "32": {
+            "combined": 53.7,
+            "input": 37.13,
+            "target": 25.9
+          },
+          "48": {
+            "combined": 43.63,
+            "input": 13.1,
+            "target": 8.17
+          },
+          "64": {
+            "combined": 34.8,
+            "input": 1.33,
+            "target": 0.63
+          },
+          "80": {
+            "combined": 22.53,
+            "input": 0.03,
+            "target": 0.0
+          },
+          "96": {
+            "combined": 10.87,
+            "input": 0.0,
+            "target": 0.0
+          },
+          "128": {
+            "combined": 0.7,
+            "input": 0.0,
+            "target": 0.0
+          },
+          "160": {
+            "combined": 0.03,
+            "input": 0.0,
+            "target": 0.0
+          },
+          "192": {
+            "combined": 0.0,
+            "input": 0.0,
+            "target": 0.0
+          },
+          "256": {
+            "combined": 0.0,
+            "input": 0.0,
+            "target": 0.0
+          }
+        }
+      }
+    },
+    "json_token_efficiency": {
+      "syntax_{": {
+        "text": "{",
+        "tokens": [
+          90
+        ],
+        "count": 1
+      },
+      "syntax_}": {
+        "text": "}",
+        "tokens": [
+          92
+        ],
+        "count": 1
+      },
+      "syntax_[": {
+        "text": "[",
+        "tokens": [
+          58
+        ],
+        "count": 1
+      },
+      "syntax_]": {
+        "text": "]",
+        "tokens": [
+          60
+        ],
+        "count": 1
+      },
+      "syntax_:": {
+        "text": ":",
+        "tokens": [
+          25
+        ],
+        "count": 1
+      },
+      "syntax_,": {
+        "text": ",",
+        "tokens": [
+          11
+        ],
+        "count": 1
+      },
+      "syntax_\"": {
+        "text": "\"",
+        "tokens": [
+          1
+        ],
+        "count": 1
+      },
+      "syntax_null": {
+        "text": "null",
+        "tokens": [
+          77,
+          715,
+          75
+        ],
+        "count": 3
+      },
+      "key_intent": {
+        "text": "intent",
+        "standalone_tokens": 1,
+        "quoted_colon_tokens": 3,
+        "quoted_colon_ids": [
+          1,
+          272,
+          256
+        ]
+      },
+      "key_program": {
+        "text": "program",
+        "standalone_tokens": 1,
+        "quoted_colon_tokens": 3,
+        "quoted_colon_ids": [
+          1,
+          283,
+          256
+        ]
+      },
+      "key_load_type": {
+        "text": "load_type",
+        "standalone_tokens": 3,
+        "quoted_colon_tokens": 5,
+        "quoted_colon_ids": [
+          1,
+          317,
+          62,
+          365,
+          256
+        ]
+      },
+      "key_soil_level": {
+        "text": "soil_level",
+        "standalone_tokens": 3,
+        "quoted_colon_tokens": 5,
+        "quoted_colon_ids": [
+          1,
+          417,
+          62,
+          312,
+          256
+        ]
+      },
+      "key_stain_type": {
+        "text": "stain_type",
+        "standalone_tokens": 3,
+        "quoted_colon_tokens": 5,
+        "quoted_colon_ids": [
+          1,
+          517,
+          62,
+          365,
+          256
+        ]
+      },
+      "key_temperature": {
+        "text": "temperature",
+        "standalone_tokens": 1,
+        "quoted_colon_tokens": 3,
+        "quoted_colon_ids": [
+          1,
+          333,
+          256
+        ]
+      },
+      "key_temperature_constraint": {
+        "text": "temperature_constraint",
+        "standalone_tokens": 3,
+        "quoted_colon_tokens": 5,
+        "quoted_colon_ids": [
+          1,
+          333,
+          62,
+          363,
+          256
+        ]
+      },
+      "key_spin_speed": {
+        "text": "spin_speed",
+        "standalone_tokens": 3,
+        "quoted_colon_tokens": 5,
+        "quoted_colon_ids": [
+          1,
+          341,
+          62,
+          342,
+          256
+        ]
+      },
+      "key_spin_speed_constraint": {
+        "text": "spin_speed_constraint",
+        "standalone_tokens": 5,
+        "quoted_colon_tokens": 7,
+        "quoted_colon_ids": [
+          1,
+          341,
+          62,
+          342,
+          62,
+          363,
+          256
+        ]
+      },
+      "key_water_level": {
+        "text": "water_level",
+        "standalone_tokens": 3,
+        "quoted_colon_tokens": 5,
+        "quoted_colon_ids": [
+          1,
+          396,
+          62,
+          312,
+          256
+        ]
+      },
+      "key_wash_duration": {
+        "text": "wash_duration",
+        "standalone_tokens": 3,
+        "quoted_colon_tokens": 5,
+        "quoted_colon_ids": [
+          1,
+          414,
+          62,
+          385,
+          256
+        ]
+      },
+      "key_soak_duration": {
+        "text": "soak_duration",
+        "standalone_tokens": 4,
+        "quoted_colon_tokens": 6,
+        "quoted_colon_ids": [
+          1,
+          82,
+          576,
+          62,
+          385,
+          256
+        ]
+      },
+      "key_rinse_count": {
+        "text": "rinse_count",
+        "standalone_tokens": 6,
+        "quoted_colon_tokens": 8,
+        "quoted_colon_ids": [
+          1,
+          81,
+          518,
+          62,
+          66,
+          299,
+          266,
+          256
+        ]
+      },
+      "key_dry_duration": {
+        "text": "dry_duration",
+        "standalone_tokens": 3,
+        "quoted_colon_tokens": 5,
+        "quoted_colon_ids": [
+          1,
+          532,
+          62,
+          385,
+          256
+        ]
+      },
+      "key_options": {
+        "text": "options",
+        "standalone_tokens": 1,
+        "quoted_colon_tokens": 3,
+        "quoted_colon_ids": [
+          1,
+          382,
+          256
+        ]
+      },
+      "key_disabled_options": {
+        "text": "disabled_options",
+        "standalone_tokens": 3,
+        "quoted_colon_tokens": 5,
+        "quoted_colon_ids": [
+          1,
+          732,
+          62,
+          382,
+          256
+        ]
+      },
+      "key_constraints": {
+        "text": "constraints",
+        "standalone_tokens": 1,
+        "quoted_colon_tokens": 3,
+        "quoted_colon_ids": [
+          1,
+          406,
+          256
+        ]
+      },
+      "val_START_CYCLE": {
+        "text": "START_CYCLE",
+        "tokens": [
+          296,
+          62,
+          297
+        ],
+        "count": 3
+      },
+      "val_SELECT_PROGRAM": {
+        "text": "SELECT_PROGRAM",
+        "tokens": [
+          523,
+          62,
+          487
+        ],
+        "count": 3
+      },
+      "val_SET_TEMPERATURE": {
+        "text": "SET_TEMPERATURE",
+        "tokens": [
+          410,
+          62,
+          705
+        ],
+        "count": 3
+      },
+      "val_SET_SPIN_SPEED": {
+        "text": "SET_SPIN_SPEED",
+        "tokens": [
+          410,
+          62,
+          534,
+          62,
+          692
+        ],
+        "count": 5
+      },
+      "val_PAUSE": {
+        "text": "PAUSE",
+        "tokens": [
+          47,
+          537,
+          337
+        ],
+        "count": 3
+      },
+      "val_RESUME": {
+        "text": "RESUME",
+        "tokens": [
+          391,
+          50,
+          415,
+          36
+        ],
+        "count": 4
+      },
+      "val_STOP": {
+        "text": "STOP",
+        "tokens": [
+          286,
+          531
+        ],
+        "count": 2
+      },
+      "val_CANCEL": {
+        "text": "CANCEL",
+        "tokens": [
+          34,
+          528,
+          34,
+          477
+        ],
+        "count": 4
+      },
+      "val_QUERY_STATUS": {
+        "text": "QUERY_STATUS",
+        "tokens": [
+          566,
+          62,
+          288,
+          596,
+          50
+        ],
+        "count": 5
+      },
+      "val_QUERY_PROGRAM": {
+        "text": "QUERY_PROGRAM",
+        "tokens": [
+          566,
+          62,
+          487
+        ],
+        "count": 3
+      },
+      "val_QUERY_REMAINING_TIME": {
+        "text": "QUERY_REMAINING_TIME",
+        "tokens": [
+          566,
+          62,
+          453,
+          32,
+          339,
+          339,
+          38,
+          62,
+          409,
+          44,
+          36
+        ],
+        "count": 11
+      },
+      "val_DISABLE_OPTION": {
+        "text": "DISABLE_OPTION",
+        "tokens": [
+          731,
+          62,
+          598
+        ],
+        "count": 3
+      },
+      "val_ENABLE_OPTION": {
+        "text": "ENABLE_OPTION",
+        "tokens": [
+          751,
+          62,
+          598
+        ],
+        "count": 3
+      },
+      "val_SET_WASH_DURATION": {
+        "text": "SET_WASH_DURATION",
+        "tokens": [
+          410,
+          62,
+          644,
+          62,
+          749
+        ],
+        "count": 5
+      },
+      "val_SET_WATER_LEVEL": {
+        "text": "SET_WATER_LEVEL",
+        "tokens": [
+          410,
+          62,
+          762,
+          62,
+          760
+        ],
+        "count": 5
+      },
+      "val_SET_SOAK": {
+        "text": "SET_SOAK",
+        "tokens": [
+          410,
+          62,
+          677
+        ],
+        "count": 3
+      },
+      "val_SET_DRY": {
+        "text": "SET_DRY",
+        "tokens": [
+          410,
+          62,
+          606
+        ],
+        "count": 3
+      },
+      "val_SET_RINSE": {
+        "text": "SET_RINSE",
+        "tokens": [
+          410,
+          62,
+          536
+        ],
+        "count": 3
+      },
+      "val_COTTON": {
+        "text": "COTTON",
+        "tokens": [
+          556
+        ],
+        "count": 1
+      },
+      "val_DELICATE": {
+        "text": "DELICATE",
+        "tokens": [
+          580
+        ],
+        "count": 1
+      },
+      "val_WOOL": {
+        "text": "WOOL",
+        "tokens": [
+          545
+        ],
+        "count": 1
+      },
+      "val_QUICK": {
+        "text": "QUICK",
+        "tokens": [
+          687
+        ],
+        "count": 1
+      },
+      "val_NORMAL": {
+        "text": "NORMAL",
+        "tokens": [
+          512
+        ],
+        "count": 1
+      },
+      "val_JEANS": {
+        "text": "JEANS",
+        "tokens": [
+          543
+        ],
+        "count": 1
+      },
+      "val_MIXED": {
+        "text": "MIXED",
+        "tokens": [
+          553
+        ],
+        "count": 1
+      },
+      "val_SYNTHETIC": {
+        "text": "SYNTHETIC",
+        "tokens": [
+          550
+        ],
+        "count": 1
+      },
+      "val_HEAVY": {
+        "text": "HEAVY",
+        "tokens": [
+          504
+        ],
+        "count": 1
+      },
+      "val_GENTLE": {
+        "text": "GENTLE",
+        "tokens": [
+          593
+        ],
+        "count": 1
+      },
+      "val_DRAIN": {
+        "text": "DRAIN",
+        "tokens": [
+          681
+        ],
+        "count": 1
+      },
+      "val_RINSE": {
+        "text": "RINSE",
+        "tokens": [
+          536
+        ],
+        "count": 1
+      },
+      "val_SPIN": {
+        "text": "SPIN",
+        "tokens": [
+          534
+        ],
+        "count": 1
+      },
+      "val_DRUM_CLEAN": {
+        "text": "DRUM_CLEAN",
+        "tokens": [
+          586,
+          62,
+          585
+        ],
+        "count": 3
+      },
+      "val_DRY": {
+        "text": "DRY",
+        "tokens": [
+          606
+        ],
+        "count": 1
+      },
+      "val_BABY_CLOTHES": {
+        "text": "BABY_CLOTHES",
+        "tokens": [
+          33,
+          530,
+          56,
+          62,
+          34,
+          43,
+          400,
+          500,
+          50
+        ],
+        "count": 9
+      },
+      "val_LIGHT": {
+        "text": "LIGHT",
+        "tokens": [
+          615
+        ],
+        "count": 1
+      },
+      "val_SWEAT": {
+        "text": "SWEAT",
+        "tokens": [
+          50,
+          54,
+          386,
+          51
+        ],
+        "count": 4
+      },
+      "val_FOOD": {
+        "text": "FOOD",
+        "tokens": [
+          37,
+          46,
+          46,
+          35
+        ],
+        "count": 4
+      },
+      "val_DIRT": {
+        "text": "DIRT",
+        "tokens": [
+          624,
+          293
+        ],
+        "count": 2
+      },
+      "val_OIL": {
+        "text": "OIL",
+        "tokens": [
+          46,
+          665
+        ],
+        "count": 2
+      },
+      "val_COLD": {
+        "text": "COLD",
+        "tokens": [
+          568
+        ],
+        "count": 1
+      },
+      "val_WARM": {
+        "text": "WARM",
+        "tokens": [
+          633
+        ],
+        "count": 1
+      },
+      "val_NOT_HOT": {
+        "text": "NOT_HOT",
+        "tokens": [
+          527,
+          62,
+          39,
+          400
+        ],
+        "count": 4
+      },
+      "val_NOT_COLD": {
+        "text": "NOT_COLD",
+        "tokens": [
+          527,
+          62,
+          568
+        ],
+        "count": 3
+      },
+      "val_LOW": {
+        "text": "LOW",
+        "tokens": [
+          476
+        ],
+        "count": 1
+      },
+      "val_MEDIUM": {
+        "text": "MEDIUM",
+        "tokens": [
+          526
+        ],
+        "count": 1
+      },
+      "val_HIGH": {
+        "text": "HIGH",
+        "tokens": [
+          345
+        ],
+        "count": 1
+      },
+      "val_AUTO": {
+        "text": "AUTO",
+        "tokens": [
+          629
+        ],
+        "count": 1
+      },
+      "val_NOT_HIGH": {
+        "text": "NOT_HIGH",
+        "tokens": [
+          527,
+          62,
+          345
+        ],
+        "count": 3
+      },
+      "val_NOT_LOW": {
+        "text": "NOT_LOW",
+        "tokens": [
+          527,
+          62,
+          476
+        ],
+        "count": 3
+      },
+      "val_STAIN_REMOVAL": {
+        "text": "STAIN_REMOVAL",
+        "tokens": [
+          491,
+          62,
+          493
+        ],
+        "count": 3
+      },
+      "val_EXTRA_RINSE": {
+        "text": "EXTRA_RINSE",
+        "tokens": [
+          36,
+          55,
+          51,
+          371,
+          62,
+          536
+        ],
+        "count": 6
+      },
+      "val_PREWASH": {
+        "text": "PREWASH",
+        "tokens": [
+          47,
+          391,
+          644
+        ],
+        "count": 3
+      },
+      "val_STEAM": {
+        "text": "STEAM",
+        "tokens": [
+          286,
+          386,
+          44
+        ],
+        "count": 3
+      },
+      "val_CHILD_LOCK": {
+        "text": "CHILD_LOCK",
+        "tokens": [
+          34,
+          39,
+          665,
+          35,
+          62,
+          445,
+          34,
+          42
+        ],
+        "count": 8
+      },
+      "val_SOAK": {
+        "text": "SOAK",
+        "tokens": [
+          677
+        ],
+        "count": 1
+      },
+      "val_null": {
+        "text": "null",
+        "tokens": [
+          77,
+          715,
+          75
+        ],
+        "count": 3
+      },
+      "val_true": {
+        "text": "true",
+        "tokens": [
+          689
+        ],
+        "count": 1
+      },
+      "val_false": {
+        "text": "false",
+        "tokens": [
+          69,
+          447,
+          278
+        ],
+        "count": 3
+      }
+    }
+  },
+  "1024": {
+    "vocab_size_requested": 1024,
+    "vocab_size_actual": 1024,
+    "splits": {
+      "train": {
+        "total_examples": 37950,
+        "input_token_lengths": {
+          "min": 2,
+          "median": 11.0,
+          "mean": 15.75,
+          "p95": 34.0,
+          "p99": 41.0,
+          "max": 58
+        },
+        "target_token_lengths": {
+          "min": 5,
+          "median": 15.0,
+          "mean": 20.07,
+          "p95": 47.0,
+          "p99": 59.0,
+          "max": 83
+        },
+        "combined_token_lengths": {
+          "min": 11,
+          "median": 27.0,
+          "mean": 38.82,
+          "p95": 82.0,
+          "p99": 101.0,
+          "max": 134
+        },
+        "percentage_exceeding_thresholds": {
+          "32": {
+            "combined": 41.95,
+            "input": 6.47,
+            "target": 18.48
+          },
+          "48": {
+            "combined": 34.05,
+            "input": 0.11,
+            "target": 4.09
+          },
+          "64": {
+            "combined": 15.19,
+            "input": 0.0,
+            "target": 0.33
+          },
+          "80": {
+            "combined": 5.73,
+            "input": 0.0,
+            "target": 0.01
+          },
+          "96": {
+            "combined": 1.56,
+            "input": 0.0,
+            "target": 0.0
+          },
+          "128": {
+            "combined": 0.01,
+            "input": 0.0,
+            "target": 0.0
+          },
+          "160": {
+            "combined": 0.0,
+            "input": 0.0,
+            "target": 0.0
+          },
+          "192": {
+            "combined": 0.0,
+            "input": 0.0,
+            "target": 0.0
+          },
+          "256": {
+            "combined": 0.0,
+            "input": 0.0,
+            "target": 0.0
+          }
+        }
+      },
+      "validation": {
+        "total_examples": 3000,
+        "input_token_lengths": {
+          "min": 4,
+          "median": 15.0,
+          "mean": 21.47,
+          "p95": 46.0,
+          "p99": 53.0,
+          "max": 65
+        },
+        "target_token_lengths": {
+          "min": 5,
+          "median": 15.0,
+          "mean": 22.03,
+          "p95": 49.0,
+          "p99": 61.0,
+          "max": 71
+        },
+        "combined_token_lengths": {
+          "min": 12,
+          "median": 31.0,
+          "mean": 46.51,
+          "p95": 96.0,
+          "p99": 114.01,
+          "max": 139
+        },
+        "percentage_exceeding_thresholds": {
+          "32": {
+            "combined": 47.83,
+            "input": 25.8,
+            "target": 23.0
+          },
+          "48": {
+            "combined": 42.0,
+            "input": 3.23,
+            "target": 5.87
+          },
+          "64": {
+            "combined": 27.13,
+            "input": 0.07,
+            "target": 0.4
+          },
+          "80": {
+            "combined": 13.4,
+            "input": 0.0,
+            "target": 0.0
+          },
+          "96": {
+            "combined": 4.27,
+            "input": 0.0,
+            "target": 0.0
+          },
+          "128": {
+            "combined": 0.07,
+            "input": 0.0,
+            "target": 0.0
+          },
+          "160": {
+            "combined": 0.0,
+            "input": 0.0,
+            "target": 0.0
+          },
+          "192": {
+            "combined": 0.0,
+            "input": 0.0,
+            "target": 0.0
+          },
+          "256": {
+            "combined": 0.0,
+            "input": 0.0,
+            "target": 0.0
+          }
+        }
+      },
+      "test": {
+        "total_examples": 3000,
+        "input_token_lengths": {
+          "min": 4,
+          "median": 14.0,
+          "mean": 21.49,
+          "p95": 47.0,
+          "p99": 54.0,
+          "max": 66
+        },
+        "target_token_lengths": {
+          "min": 5,
+          "median": 15.0,
+          "mean": 22.52,
+          "p95": 49.0,
+          "p99": 59.0,
+          "max": 71
+        },
+        "combined_token_lengths": {
+          "min": 13,
+          "median": 30.0,
+          "mean": 47.01,
+          "p95": 96.0,
+          "p99": 111.0,
+          "max": 135
+        },
+        "percentage_exceeding_thresholds": {
+          "32": {
+            "combined": 46.67,
+            "input": 27.03,
+            "target": 24.63
+          },
+          "48": {
+            "combined": 41.73,
+            "input": 3.9,
+            "target": 6.17
+          },
+          "64": {
+            "combined": 29.37,
+            "input": 0.07,
+            "target": 0.23
+          },
+          "80": {
+            "combined": 15.0,
+            "input": 0.0,
+            "target": 0.0
+          },
+          "96": {
+            "combined": 4.97,
+            "input": 0.0,
+            "target": 0.0
+          },
+          "128": {
+            "combined": 0.17,
+            "input": 0.0,
+            "target": 0.0
+          },
+          "160": {
+            "combined": 0.0,
+            "input": 0.0,
+            "target": 0.0
+          },
+          "192": {
+            "combined": 0.0,
+            "input": 0.0,
+            "target": 0.0
+          },
+          "256": {
+            "combined": 0.0,
+            "input": 0.0,
+            "target": 0.0
+          }
+        }
+      }
+    },
+    "json_token_efficiency": {
+      "syntax_{": {
+        "text": "{",
+        "tokens": [
+          90
+        ],
+        "count": 1
+      },
+      "syntax_}": {
+        "text": "}",
+        "tokens": [
+          92
+        ],
+        "count": 1
+      },
+      "syntax_[": {
+        "text": "[",
+        "tokens": [
+          58
+        ],
+        "count": 1
+      },
+      "syntax_]": {
+        "text": "]",
+        "tokens": [
+          60
+        ],
+        "count": 1
+      },
+      "syntax_:": {
+        "text": ":",
+        "tokens": [
+          25
+        ],
+        "count": 1
+      },
+      "syntax_,": {
+        "text": ",",
+        "tokens": [
+          11
+        ],
+        "count": 1
+      },
+      "syntax_\"": {
+        "text": "\"",
+        "tokens": [
+          1
+        ],
+        "count": 1
+      },
+      "syntax_null": {
+        "text": "null",
+        "tokens": [
+          77,
+          715,
+          75
+        ],
+        "count": 3
+      },
+      "key_intent": {
+        "text": "intent",
+        "standalone_tokens": 1,
+        "quoted_colon_tokens": 3,
+        "quoted_colon_ids": [
+          1,
+          272,
+          256
+        ]
+      },
+      "key_program": {
+        "text": "program",
+        "standalone_tokens": 1,
+        "quoted_colon_tokens": 3,
+        "quoted_colon_ids": [
+          1,
+          283,
+          256
+        ]
+      },
+      "key_load_type": {
+        "text": "load_type",
+        "standalone_tokens": 3,
+        "quoted_colon_tokens": 5,
+        "quoted_colon_ids": [
+          1,
+          317,
+          62,
+          365,
+          256
+        ]
+      },
+      "key_soil_level": {
+        "text": "soil_level",
+        "standalone_tokens": 3,
+        "quoted_colon_tokens": 5,
+        "quoted_colon_ids": [
+          1,
+          417,
+          62,
+          312,
+          256
+        ]
+      },
+      "key_stain_type": {
+        "text": "stain_type",
+        "standalone_tokens": 3,
+        "quoted_colon_tokens": 5,
+        "quoted_colon_ids": [
+          1,
+          517,
+          62,
+          365,
+          256
+        ]
+      },
+      "key_temperature": {
+        "text": "temperature",
+        "standalone_tokens": 1,
+        "quoted_colon_tokens": 3,
+        "quoted_colon_ids": [
+          1,
+          333,
+          256
+        ]
+      },
+      "key_temperature_constraint": {
+        "text": "temperature_constraint",
+        "standalone_tokens": 3,
+        "quoted_colon_tokens": 5,
+        "quoted_colon_ids": [
+          1,
+          333,
+          62,
+          363,
+          256
+        ]
+      },
+      "key_spin_speed": {
+        "text": "spin_speed",
+        "standalone_tokens": 3,
+        "quoted_colon_tokens": 5,
+        "quoted_colon_ids": [
+          1,
+          341,
+          62,
+          342,
+          256
+        ]
+      },
+      "key_spin_speed_constraint": {
+        "text": "spin_speed_constraint",
+        "standalone_tokens": 5,
+        "quoted_colon_tokens": 7,
+        "quoted_colon_ids": [
+          1,
+          341,
+          62,
+          342,
+          62,
+          363,
+          256
+        ]
+      },
+      "key_water_level": {
+        "text": "water_level",
+        "standalone_tokens": 3,
+        "quoted_colon_tokens": 5,
+        "quoted_colon_ids": [
+          1,
+          396,
+          62,
+          312,
+          256
+        ]
+      },
+      "key_wash_duration": {
+        "text": "wash_duration",
+        "standalone_tokens": 3,
+        "quoted_colon_tokens": 5,
+        "quoted_colon_ids": [
+          1,
+          414,
+          62,
+          385,
+          256
+        ]
+      },
+      "key_soak_duration": {
+        "text": "soak_duration",
+        "standalone_tokens": 3,
+        "quoted_colon_tokens": 5,
+        "quoted_colon_ids": [
+          1,
+          783,
+          62,
+          385,
+          256
+        ]
+      },
+      "key_rinse_count": {
+        "text": "rinse_count",
+        "standalone_tokens": 3,
+        "quoted_colon_tokens": 5,
+        "quoted_colon_ids": [
+          1,
+          938,
+          62,
+          940,
+          256
+        ]
+      },
+      "key_dry_duration": {
+        "text": "dry_duration",
+        "standalone_tokens": 3,
+        "quoted_colon_tokens": 5,
+        "quoted_colon_ids": [
+          1,
+          532,
+          62,
+          385,
+          256
+        ]
+      },
+      "key_options": {
+        "text": "options",
+        "standalone_tokens": 1,
+        "quoted_colon_tokens": 3,
+        "quoted_colon_ids": [
+          1,
+          382,
+          256
+        ]
+      },
+      "key_disabled_options": {
+        "text": "disabled_options",
+        "standalone_tokens": 3,
+        "quoted_colon_tokens": 5,
+        "quoted_colon_ids": [
+          1,
+          732,
+          62,
+          382,
+          256
+        ]
+      },
+      "key_constraints": {
+        "text": "constraints",
+        "standalone_tokens": 1,
+        "quoted_colon_tokens": 3,
+        "quoted_colon_ids": [
+          1,
+          406,
+          256
+        ]
+      },
+      "val_START_CYCLE": {
+        "text": "START_CYCLE",
+        "tokens": [
+          296,
+          62,
+          297
+        ],
+        "count": 3
+      },
+      "val_SELECT_PROGRAM": {
+        "text": "SELECT_PROGRAM",
+        "tokens": [
+          523,
+          62,
+          487
+        ],
+        "count": 3
+      },
+      "val_SET_TEMPERATURE": {
+        "text": "SET_TEMPERATURE",
+        "tokens": [
+          410,
+          62,
+          705
+        ],
+        "count": 3
+      },
+      "val_SET_SPIN_SPEED": {
+        "text": "SET_SPIN_SPEED",
+        "tokens": [
+          410,
+          62,
+          534,
+          62,
+          692
+        ],
+        "count": 5
+      },
+      "val_PAUSE": {
+        "text": "PAUSE",
+        "tokens": [
+          793
+        ],
+        "count": 1
+      },
+      "val_RESUME": {
+        "text": "RESUME",
+        "tokens": [
+          797
+        ],
+        "count": 1
+      },
+      "val_STOP": {
+        "text": "STOP",
+        "tokens": [
+          803
+        ],
+        "count": 1
+      },
+      "val_CANCEL": {
+        "text": "CANCEL",
+        "tokens": [
+          786
+        ],
+        "count": 1
+      },
+      "val_QUERY_STATUS": {
+        "text": "QUERY_STATUS",
+        "tokens": [
+          566,
+          62,
+          820
+        ],
+        "count": 3
+      },
+      "val_QUERY_PROGRAM": {
+        "text": "QUERY_PROGRAM",
+        "tokens": [
+          566,
+          62,
+          487
+        ],
+        "count": 3
+      },
+      "val_QUERY_REMAINING_TIME": {
+        "text": "QUERY_REMAINING_TIME",
+        "tokens": [
+          566,
+          62,
+          812,
+          62,
+          810
+        ],
+        "count": 5
+      },
+      "val_DISABLE_OPTION": {
+        "text": "DISABLE_OPTION",
+        "tokens": [
+          731,
+          62,
+          598
+        ],
+        "count": 3
+      },
+      "val_ENABLE_OPTION": {
+        "text": "ENABLE_OPTION",
+        "tokens": [
+          751,
+          62,
+          598
+        ],
+        "count": 3
+      },
+      "val_SET_WASH_DURATION": {
+        "text": "SET_WASH_DURATION",
+        "tokens": [
+          410,
+          62,
+          644,
+          62,
+          749
+        ],
+        "count": 5
+      },
+      "val_SET_WATER_LEVEL": {
+        "text": "SET_WATER_LEVEL",
+        "tokens": [
+          410,
+          62,
+          762,
+          62,
+          760
+        ],
+        "count": 5
+      },
+      "val_SET_SOAK": {
+        "text": "SET_SOAK",
+        "tokens": [
+          410,
+          62,
+          677
+        ],
+        "count": 3
+      },
+      "val_SET_DRY": {
+        "text": "SET_DRY",
+        "tokens": [
+          410,
+          62,
+          606
+        ],
+        "count": 3
+      },
+      "val_SET_RINSE": {
+        "text": "SET_RINSE",
+        "tokens": [
+          410,
+          62,
+          536
+        ],
+        "count": 3
+      },
+      "val_COTTON": {
+        "text": "COTTON",
+        "tokens": [
+          556
+        ],
+        "count": 1
+      },
+      "val_DELICATE": {
+        "text": "DELICATE",
+        "tokens": [
+          580
+        ],
+        "count": 1
+      },
+      "val_WOOL": {
+        "text": "WOOL",
+        "tokens": [
+          545
+        ],
+        "count": 1
+      },
+      "val_QUICK": {
+        "text": "QUICK",
+        "tokens": [
+          687
+        ],
+        "count": 1
+      },
+      "val_NORMAL": {
+        "text": "NORMAL",
+        "tokens": [
+          512
+        ],
+        "count": 1
+      },
+      "val_JEANS": {
+        "text": "JEANS",
+        "tokens": [
+          543
+        ],
+        "count": 1
+      },
+      "val_MIXED": {
+        "text": "MIXED",
+        "tokens": [
+          553
+        ],
+        "count": 1
+      },
+      "val_SYNTHETIC": {
+        "text": "SYNTHETIC",
+        "tokens": [
+          550
+        ],
+        "count": 1
+      },
+      "val_HEAVY": {
+        "text": "HEAVY",
+        "tokens": [
+          504
+        ],
+        "count": 1
+      },
+      "val_GENTLE": {
+        "text": "GENTLE",
+        "tokens": [
+          593
+        ],
+        "count": 1
+      },
+      "val_DRAIN": {
+        "text": "DRAIN",
+        "tokens": [
+          681
+        ],
+        "count": 1
+      },
+      "val_RINSE": {
+        "text": "RINSE",
+        "tokens": [
+          536
+        ],
+        "count": 1
+      },
+      "val_SPIN": {
+        "text": "SPIN",
+        "tokens": [
+          534
+        ],
+        "count": 1
+      },
+      "val_DRUM_CLEAN": {
+        "text": "DRUM_CLEAN",
+        "tokens": [
+          586,
+          62,
+          585
+        ],
+        "count": 3
+      },
+      "val_DRY": {
+        "text": "DRY",
+        "tokens": [
+          606
+        ],
+        "count": 1
+      },
+      "val_BABY_CLOTHES": {
+        "text": "BABY_CLOTHES",
+        "tokens": [
+          780,
+          62,
+          782
+        ],
+        "count": 3
+      },
+      "val_LIGHT": {
+        "text": "LIGHT",
+        "tokens": [
+          615
+        ],
+        "count": 1
+      },
+      "val_SWEAT": {
+        "text": "SWEAT",
+        "tokens": [
+          802
+        ],
+        "count": 1
+      },
+      "val_FOOD": {
+        "text": "FOOD",
+        "tokens": [
+          826
+        ],
+        "count": 1
+      },
+      "val_DIRT": {
+        "text": "DIRT",
+        "tokens": [
+          825
+        ],
+        "count": 1
+      },
+      "val_OIL": {
+        "text": "OIL",
+        "tokens": [
+          829
+        ],
+        "count": 1
+      },
+      "val_COLD": {
+        "text": "COLD",
+        "tokens": [
+          568
+        ],
+        "count": 1
+      },
+      "val_WARM": {
+        "text": "WARM",
+        "tokens": [
+          633
+        ],
+        "count": 1
+      },
+      "val_NOT_HOT": {
+        "text": "NOT_HOT",
+        "tokens": [
+          527,
+          62,
+          898
+        ],
+        "count": 3
+      },
+      "val_NOT_COLD": {
+        "text": "NOT_COLD",
+        "tokens": [
+          527,
+          62,
+          568
+        ],
+        "count": 3
+      },
+      "val_LOW": {
+        "text": "LOW",
+        "tokens": [
+          476
+        ],
+        "count": 1
+      },
+      "val_MEDIUM": {
+        "text": "MEDIUM",
+        "tokens": [
+          526
+        ],
+        "count": 1
+      },
+      "val_HIGH": {
+        "text": "HIGH",
+        "tokens": [
+          345
+        ],
+        "count": 1
+      },
+      "val_AUTO": {
+        "text": "AUTO",
+        "tokens": [
+          629
+        ],
+        "count": 1
+      },
+      "val_NOT_HIGH": {
+        "text": "NOT_HIGH",
+        "tokens": [
+          527,
+          62,
+          345
+        ],
+        "count": 3
+      },
+      "val_NOT_LOW": {
+        "text": "NOT_LOW",
+        "tokens": [
+          527,
+          62,
+          476
+        ],
+        "count": 3
+      },
+      "val_STAIN_REMOVAL": {
+        "text": "STAIN_REMOVAL",
+        "tokens": [
+          491,
+          62,
+          493
+        ],
+        "count": 3
+      },
+      "val_EXTRA_RINSE": {
+        "text": "EXTRA_RINSE",
+        "tokens": [
+          818,
+          62,
+          536
+        ],
+        "count": 3
+      },
+      "val_PREWASH": {
+        "text": "PREWASH",
+        "tokens": [
+          859
+        ],
+        "count": 1
+      },
+      "val_STEAM": {
+        "text": "STEAM",
+        "tokens": [
+          838
+        ],
+        "count": 1
+      },
+      "val_CHILD_LOCK": {
+        "text": "CHILD_LOCK",
+        "tokens": [
+          855,
+          62,
+          851
+        ],
+        "count": 3
+      },
+      "val_SOAK": {
+        "text": "SOAK",
+        "tokens": [
+          677
+        ],
+        "count": 1
+      },
+      "val_null": {
+        "text": "null",
+        "tokens": [
+          77,
+          715,
+          75
+        ],
+        "count": 3
+      },
+      "val_true": {
+        "text": "true",
+        "tokens": [
+          689
+        ],
+        "count": 1
+      },
+      "val_false": {
+        "text": "false",
+        "tokens": [
+          69,
+          447,
+          278
+        ],
+        "count": 3
+      }
+    }
+  }
+}

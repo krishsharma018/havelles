@@ -1,0 +1,9 @@
+idf_component_register(
+    SRCS
+        "esp32_llm_runtime.cpp"
+        "model/stories260K_model.cc"
+        "model/tok512_model.cc"
+    INCLUDE_DIRS
+        "."
+        "model"
+)
